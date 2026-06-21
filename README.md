@@ -27,7 +27,7 @@ The application supports Android 8.0 (API 26) and newer.
 
 ## Install on an Android phone
 
-For private testing, download `install/RipperTipper-0.1.0-debug.apk` directly
+For private testing, download `install/RipperTipper-latest-debug.apk` directly
 from this repository on the phone. Android may ask you to allow the browser or
 GitHub app to install unknown apps. This is a development build and is not a
 Google Play release.
@@ -40,3 +40,8 @@ then expose Ripper Tipper's final recommendations through a small API.
 
 Initial public fixture and prediction data will be sourced server-side from
 Squiggle in accordance with its caching and identification requirements.
+
+The current free-data pipeline also rebuilds Elo team strength from completed
+matches, compares recent form and rest, estimates travel, checks venue weather,
+and generates a short explanation for every recommendation. Its inspectable
+output is stored in `backend/output/current_round.json`.

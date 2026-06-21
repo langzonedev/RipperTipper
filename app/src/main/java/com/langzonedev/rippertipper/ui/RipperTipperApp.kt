@@ -39,7 +39,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.langzonedev.rippertipper.data.SampleTips
+import com.langzonedev.rippertipper.data.PredictionSnapshot
 import com.langzonedev.rippertipper.model.Confidence
 import com.langzonedev.rippertipper.model.Tip
 import com.langzonedev.rippertipper.ui.theme.Caution
@@ -66,7 +66,7 @@ fun RipperTipperApp() {
         item {
             RoundSummary()
         }
-        items(SampleTips.round, key = Tip::id) { tip ->
+        items(PredictionSnapshot.tips, key = Tip::id) { tip ->
             TipCard(
                 tip = tip,
                 expanded = tip.id == expandedTipId,
@@ -78,7 +78,7 @@ fun RipperTipperApp() {
         }
         item {
             Text(
-                text = "Fixture and consensus snapshot · 21 June 2026",
+                text = PredictionSnapshot.updatedLabel,
                 style = MaterialTheme.typography.bodyMedium,
                 color = InkMuted,
                 textAlign = TextAlign.Center,
@@ -127,7 +127,7 @@ private fun Hero() {
         Spacer(Modifier.height(30.dp))
 
         Text(
-            text = "NEXT UP  ·  ${SampleTips.roundName.uppercase()}",
+            text = "NEXT UP  ·  ${PredictionSnapshot.roundName.uppercase()}",
             color = Gold,
             style = MaterialTheme.typography.labelLarge,
         )
@@ -138,7 +138,7 @@ private fun Hero() {
         )
         Spacer(Modifier.height(12.dp))
         Text(
-            text = SampleTips.roundDates,
+            text = PredictionSnapshot.roundDates,
             color = Color.White.copy(alpha = 0.68f),
             style = MaterialTheme.typography.bodyLarge,
         )
@@ -156,12 +156,12 @@ private fun RoundSummary() {
     ) {
         Column {
             Text(
-                text = "${SampleTips.round.size} PICKS READY",
+                text = "${PredictionSnapshot.tips.size} PICKS READY",
                 style = MaterialTheme.typography.labelLarge,
                 color = Forest,
             )
             Text(
-                text = "Round 15 is currently in progress",
+                text = PredictionSnapshot.status,
                 style = MaterialTheme.typography.bodyMedium,
                 color = InkMuted,
             )
@@ -253,7 +253,7 @@ private fun TipCard(
                     )
                     Spacer(Modifier.height(5.dp))
                     Text(
-                        text = "Current computer-model consensus favours ${tip.recommendedTeam}. Live Ripper Tipper analysis will add form, injuries and late team news.",
+                        text = tip.reason,
                         style = MaterialTheme.typography.bodyMedium,
                         color = InkMuted,
                     )

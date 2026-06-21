@@ -14,6 +14,8 @@ data class Tip(
     val confidencePercent: Int,
     val startTime: String,
     val venue: String,
+    val reason: String,
+    val modelCount: Int,
 ) {
     val confidence: Confidence
         get() = confidenceFor(confidencePercent)
@@ -24,4 +26,3 @@ fun confidenceFor(percent: Int): Confidence = when {
     percent >= 58 -> Confidence.MEDIUM
     else -> Confidence.LOW
 }
-

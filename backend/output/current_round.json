@@ -1,0 +1,209 @@
+{
+  "round_name": "Round 16",
+  "round_dates": "25\u201328 June 2026 \u00b7 Adelaide time",
+  "status": "26 models + match context",
+  "updated_at": "2026-06-21T08:42:07.453327+00:00",
+  "updated_label": "Updated 21 June, 6:12 pm",
+  "sources": [
+    "Squiggle",
+    "Open-Meteo"
+  ],
+  "tips": [
+    {
+      "id": 38622,
+      "away_team": "Sydney",
+      "home_team": "Brisbane Lions",
+      "recommended_team": "Brisbane Lions",
+      "confidence_percent": 52,
+      "start_time": "Thu 7:00 pm",
+      "venue": "Gabba",
+      "reason": "16 of 25 tracked models favour Brisbane Lions. Sydney rates better historically, keeping this pick tighter. Recent form runs against the pick, so confidence is restrained.",
+      "model_count": 25,
+      "metrics": {
+        "model_home_probability": 0.5226,
+        "elo_home_probability": 0.4945,
+        "final_home_probability": 0.5164,
+        "home_elo": 1684.2,
+        "away_elo": 1733.0,
+        "home_recent_wins": 2,
+        "away_recent_wins": 4,
+        "home_rest_days": 11,
+        "away_rest_days": 11,
+        "away_travel_km": 733,
+        "weather": {
+          "rain_probability": 51,
+          "wind_max": 12.5,
+          "temperature_max": 20.3
+        }
+      }
+    },
+    {
+      "id": 38625,
+      "away_team": "Greater Western Sydney",
+      "home_team": "Hawthorn",
+      "recommended_team": "Hawthorn",
+      "confidence_percent": 74,
+      "start_time": "Fri 7:10 pm",
+      "venue": "MCG",
+      "reason": "25 of 26 tracked models favour Hawthorn. Hawthorn also rates higher on results-based team strength. The forecast looks settled, so weather should have little influence.",
+      "model_count": 26,
+      "metrics": {
+        "model_home_probability": 0.7159,
+        "elo_home_probability": 0.811,
+        "final_home_probability": 0.7428,
+        "home_elo": 1713.2,
+        "away_elo": 1505.2,
+        "home_recent_wins": 3,
+        "away_recent_wins": 2,
+        "home_rest_days": 7,
+        "away_rest_days": 6,
+        "away_travel_km": 704,
+        "weather": {
+          "rain_probability": 6,
+          "wind_max": 5.7,
+          "temperature_max": 11.3
+        }
+      }
+    },
+    {
+      "id": 38623,
+      "away_team": "West Coast",
+      "home_team": "Carlton",
+      "recommended_team": "Carlton",
+      "confidence_percent": 83,
+      "start_time": "Sat 12:45 pm",
+      "venue": "Marvel Stadium",
+      "reason": "25 of 25 tracked models favour Carlton. Carlton also rates higher on results-based team strength. Carlton has the stronger recent five-game record.",
+      "model_count": 25,
+      "metrics": {
+        "model_home_probability": 0.8342,
+        "elo_home_probability": 0.9078,
+        "final_home_probability": 0.8324,
+        "home_elo": 1479.7,
+        "away_elo": 1127.4,
+        "home_recent_wins": 5,
+        "away_recent_wins": 2,
+        "home_rest_days": 6,
+        "away_rest_days": 13,
+        "away_travel_km": 2720,
+        "weather": {
+          "rain_probability": 8,
+          "wind_max": 4.6,
+          "temperature_max": 10.4
+        }
+      }
+    },
+    {
+      "id": 38624,
+      "away_team": "Richmond",
+      "home_team": "Collingwood",
+      "recommended_team": "Collingwood",
+      "confidence_percent": 87,
+      "start_time": "Sat 3:45 pm",
+      "venue": "MCG",
+      "reason": "25 of 25 tracked models favour Collingwood. Collingwood also rates higher on results-based team strength. The forecast looks settled, so weather should have little influence.",
+      "model_count": 25,
+      "metrics": {
+        "model_home_probability": 0.8507,
+        "elo_home_probability": 0.9451,
+        "final_home_probability": 0.8715,
+        "home_elo": 1558.7,
+        "away_elo": 1109.2,
+        "home_recent_wins": 2,
+        "away_recent_wins": 1,
+        "home_rest_days": 6,
+        "away_rest_days": 6,
+        "away_travel_km": 3,
+        "weather": {
+          "rain_probability": 8,
+          "wind_max": 5.8,
+          "temperature_max": 10.8
+        }
+      }
+    },
+    {
+      "id": 38627,
+      "away_team": "Adelaide",
+      "home_team": "Port Adelaide",
+      "recommended_team": "Adelaide",
+      "confidence_percent": 72,
+      "start_time": "Sat 7:05 pm",
+      "venue": "Adelaide Oval",
+      "reason": "24 of 25 tracked models favour Adelaide. Adelaide also rates higher on results-based team strength. Adelaide has the stronger recent five-game record.",
+      "model_count": 25,
+      "metrics": {
+        "model_home_probability": 0.3255,
+        "elo_home_probability": 0.1331,
+        "final_home_probability": 0.2832,
+        "home_elo": 1331.5,
+        "away_elo": 1702.0,
+        "home_recent_wins": 1,
+        "away_recent_wins": 4,
+        "home_rest_days": 7,
+        "away_rest_days": 7,
+        "away_travel_km": 0,
+        "weather": {
+          "rain_probability": 10,
+          "wind_max": 12.9,
+          "temperature_max": 15.5
+        }
+      }
+    },
+    {
+      "id": 38626,
+      "away_team": "Essendon",
+      "home_team": "North Melbourne",
+      "recommended_team": "North Melbourne",
+      "confidence_percent": 68,
+      "start_time": "Sun 2:45 pm",
+      "venue": "Marvel Stadium",
+      "reason": "25 of 25 tracked models favour North Melbourne. North Melbourne also rates higher on results-based team strength. North Melbourne has the stronger recent five-game record.",
+      "model_count": 25,
+      "metrics": {
+        "model_home_probability": 0.6642,
+        "elo_home_probability": 0.8215,
+        "final_home_probability": 0.6808,
+        "home_elo": 1334.1,
+        "away_elo": 1113.9,
+        "home_recent_wins": 3,
+        "away_recent_wins": 0,
+        "home_rest_days": 7,
+        "away_rest_days": 15,
+        "away_travel_km": 8,
+        "weather": {
+          "rain_probability": 16,
+          "wind_max": 7.0,
+          "temperature_max": 15.7
+        }
+      }
+    },
+    {
+      "id": 38628,
+      "away_team": "Gold Coast",
+      "home_team": "Fremantle",
+      "recommended_team": "Fremantle",
+      "confidence_percent": 79,
+      "start_time": "Sun 4:40 pm",
+      "venue": "Optus Stadium",
+      "reason": "24 of 25 tracked models favour Fremantle. Fremantle also rates higher on results-based team strength. Fremantle has the stronger recent five-game record.",
+      "model_count": 25,
+      "metrics": {
+        "model_home_probability": 0.753,
+        "elo_home_probability": 0.8913,
+        "final_home_probability": 0.7894,
+        "home_elo": 1829.6,
+        "away_elo": 1509.1,
+        "home_recent_wins": 5,
+        "away_recent_wins": 1,
+        "home_rest_days": 9,
+        "away_rest_days": 8,
+        "away_travel_km": 3618,
+        "weather": {
+          "rain_probability": 77,
+          "wind_max": 8.6,
+          "temperature_max": 17.1
+        }
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 package com.langzonedev.rippertipper.model
 
-import com.langzonedev.rippertipper.data.SampleTips
+import com.langzonedev.rippertipper.data.PredictionSnapshot
 import org.junit.Assert.assertEquals
 import org.junit.Test
 
@@ -15,7 +15,7 @@ class TipTest {
 
     @Test
     fun `round 16 snapshot has seven unique fixtures`() {
-        assertEquals(7, SampleTips.round.size)
-        assertEquals(7, SampleTips.round.map(Tip::id).toSet().size)
+        assertEquals(7, PredictionSnapshot.tips.size)
+        assertEquals(7, PredictionSnapshot.tips.map(Tip::id).toSet().size)
     }
 }
