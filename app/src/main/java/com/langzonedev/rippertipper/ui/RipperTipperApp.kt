@@ -54,38 +54,45 @@ import com.langzonedev.rippertipper.ui.theme.Success
 fun RipperTipperApp() {
     var expandedTipId by remember { mutableIntStateOf(-1) }
 
-    LazyColumn(
+    Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(MaterialTheme.colorScheme.background)
-            .navigationBarsPadding(),
+            .background(Forest),
     ) {
-        item {
-            Hero()
-        }
-        item {
-            RoundSummary()
-        }
-        items(PredictionSnapshot.tips, key = Tip::id) { tip ->
-            TipCard(
-                tip = tip,
-                expanded = tip.id == expandedTipId,
-                onClick = {
-                    expandedTipId = if (tip.id == expandedTipId) -1 else tip.id
-                },
-                modifier = Modifier.padding(horizontal = 16.dp, vertical = 6.dp),
-            )
-        }
-        item {
-            Text(
-                text = PredictionSnapshot.updatedLabel,
-                style = MaterialTheme.typography.bodyMedium,
-                color = InkMuted,
-                textAlign = TextAlign.Center,
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(24.dp),
-            )
+        LazyColumn(
+            modifier = Modifier
+                .fillMaxSize()
+                .statusBarsPadding()
+                .background(MaterialTheme.colorScheme.background)
+                .navigationBarsPadding(),
+        ) {
+            item {
+                Hero()
+            }
+            item {
+                RoundSummary()
+            }
+            items(PredictionSnapshot.tips, key = Tip::id) { tip ->
+                TipCard(
+                    tip = tip,
+                    expanded = tip.id == expandedTipId,
+                    onClick = {
+                        expandedTipId = if (tip.id == expandedTipId) -1 else tip.id
+                    },
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 6.dp),
+                )
+            }
+            item {
+                Text(
+                    text = PredictionSnapshot.updatedLabel,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = InkMuted,
+                    textAlign = TextAlign.Center,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(24.dp),
+                )
+            }
         }
     }
 }
@@ -96,7 +103,6 @@ private fun Hero() {
         modifier = Modifier
             .fillMaxWidth()
             .background(Forest)
-            .statusBarsPadding()
             .padding(horizontal = 20.dp, vertical = 24.dp),
     ) {
         Row(verticalAlignment = Alignment.CenterVertically) {
