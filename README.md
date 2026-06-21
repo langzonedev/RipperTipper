@@ -25,6 +25,13 @@ The on-screen predictions are placeholders and must not yet be used as real tips
 
 The application supports Android 8.0 (API 26) and newer.
 
+## Install on an Android phone
+
+For private testing, download `install/RipperTipper-0.1.0-debug.apk` directly
+from this repository on the phone. Android may ask you to allow the browser or
+GitHub app to install unknown apps. This is a development build and is not a
+Google Play release.
+
 ## Planned architecture
 
 The Android app will remain a focused presentation client. A separate backend
