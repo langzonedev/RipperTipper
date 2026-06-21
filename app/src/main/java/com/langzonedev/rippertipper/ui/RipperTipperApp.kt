@@ -26,19 +26,24 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.langzonedev.rippertipper.data.LiveTipsRepository
 import com.langzonedev.rippertipper.data.PredictionSnapshot
 import com.langzonedev.rippertipper.model.Confidence
 import com.langzonedev.rippertipper.model.Tip
@@ -49,10 +54,51 @@ import com.langzonedev.rippertipper.ui.theme.Gold
 import com.langzonedev.rippertipper.ui.theme.InkMuted
 import com.langzonedev.rippertipper.ui.theme.RipperTipperTheme
 import com.langzonedev.rippertipper.ui.theme.Success
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 @Composable
 fun RipperTipperApp() {
     var expandedTipId by remember { mutableIntStateOf(-1) }
+    val context = LocalContext.current
+    val repository = remember { LiveTipsRepository(context.applicationContext) }
+    val initial = remember { repository.cached() }
+    var tips by remember { mutableStateOf(initial.tips) }
+    var updatedLabel by remember { mutableStateOf(initial.updatedLabel) }
+    var updatedAt by remember { mutableStateOf(initial.updatedAt) }
+    var changedCount by remember { mutableIntStateOf(initial.changedCount) }
+    var refreshing by remember { mutableStateOf(false) }
+    val scope = rememberCoroutineScope()
+
+    fun refresh() {
+        if (refreshing) return
+        scope.launch {
+            refreshing = true
+            try {
+                val result = withContext(Dispatchers.IO) { repository.refresh() }
+                tips = result.tips
+                updatedLabel = result.updatedLabel
+                updatedAt = result.updatedAt
+                changedCount = result.changedCount
+            } catch (_: Exception) {
+                updatedLabel = "Couldn’t refresh · showing saved picks"
+            } finally {
+                refreshing = false
+            }
+        }
+    }
+
+    LaunchedEffect(Unit) {
+        refresh()
+    }
+    LaunchedEffect(updatedAt) {
+        while (updatedAt > 0) {
+            delay(60_000)
+            updatedLabel = LiveTipsRepository.freshnessLabel(updatedAt)
+        }
+    }
 
     Box(
         modifier = Modifier
@@ -70,9 +116,15 @@ fun RipperTipperApp() {
                 Hero()
             }
             item {
-                RoundSummary()
+                RoundSummary(
+                    tipsCount = tips.size,
+                    updatedLabel = updatedLabel,
+                    changedCount = changedCount,
+                    refreshing = refreshing,
+                    onRefresh = ::refresh,
+                )
             }
-            items(PredictionSnapshot.tips, key = Tip::id) { tip ->
+            items(tips, key = Tip::id) { tip ->
                 TipCard(
                     tip = tip,
                     expanded = tip.id == expandedTipId,
@@ -84,7 +136,7 @@ fun RipperTipperApp() {
             }
             item {
                 Text(
-                    text = PredictionSnapshot.updatedLabel,
+                    text = "Tap REFRESH to check again",
                     style = MaterialTheme.typography.bodyMedium,
                     color = InkMuted,
                     textAlign = TextAlign.Center,
@@ -152,7 +204,13 @@ private fun Hero() {
 }
 
 @Composable
-private fun RoundSummary() {
+private fun RoundSummary(
+    tipsCount: Int,
+    updatedLabel: String,
+    changedCount: Int,
+    refreshing: Boolean,
+    onRefresh: () -> Unit,
+) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
@@ -162,12 +220,16 @@ private fun RoundSummary() {
     ) {
         Column {
             Text(
-                text = "${PredictionSnapshot.tips.size} PICKS READY",
+                text = "$tipsCount PICKS READY",
                 style = MaterialTheme.typography.labelLarge,
                 color = Forest,
             )
             Text(
-                text = PredictionSnapshot.status,
+                text = if (changedCount > 0) {
+                    "$changedCount pick${if (changedCount == 1) "" else "s"} changed"
+                } else {
+                    updatedLabel
+                },
                 style = MaterialTheme.typography.bodyMedium,
                 color = InkMuted,
             )
@@ -175,9 +237,10 @@ private fun RoundSummary() {
         Surface(
             color = Success.copy(alpha = 0.12f),
             shape = CircleShape,
+            modifier = Modifier.clickable(onClick = onRefresh),
         ) {
             Text(
-                text = "● LIVE",
+                text = if (refreshing) "↻ CHECKING" else "↻ REFRESH",
                 color = Success,
                 style = MaterialTheme.typography.labelLarge,
                 modifier = Modifier.padding(horizontal = 12.dp, vertical = 7.dp),
@@ -230,6 +293,20 @@ private fun TipCard(
                 style = MaterialTheme.typography.headlineSmall,
                 color = Forest,
             )
+            if (tip.changed) {
+                Spacer(Modifier.height(7.dp))
+                Surface(
+                    color = Gold.copy(alpha = 0.24f),
+                    shape = CircleShape,
+                ) {
+                    Text(
+                        text = "PICK CHANGED",
+                        color = Forest,
+                        style = MaterialTheme.typography.labelLarge,
+                        modifier = Modifier.padding(horizontal = 10.dp, vertical = 5.dp),
+                    )
+                }
+            }
 
             Spacer(Modifier.height(14.dp))
 

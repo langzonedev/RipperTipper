@@ -296,7 +296,13 @@ def predict(
         "start_time": display_time(local),
         "venue": display_venue,
         "reason": " ".join(reasons[:3]),
+        "context_reason": " ".join(reasons[1:3]),
         "model_count": int(models["model_count"]),
+        "kickoff_epoch_millis": round(starts.timestamp() * 1000),
+        "baseline_model_home_probability": round(model_home, 6),
+        "context_home_probability": round(
+            (home_probability - 0.78 * model_home) / 0.22, 6
+        ),
         "metrics": {
             "model_home_probability": round(model_home, 4),
             "elo_home_probability": round(elo_home, 4),
@@ -331,6 +337,9 @@ def render_kotlin(snapshot: dict[str, Any]) -> str:
             f'            venue = "{escape(tip["venue"])}",\n'
             f'            reason = "{escape(tip["reason"])}",\n'
             f"            modelCount = {tip['model_count']},\n"
+            f"            kickoffEpochMillis = {tip['kickoff_epoch_millis']}L,\n"
+            f"            baselineModelHomeProbability = {tip['baseline_model_home_probability']},\n"
+            f"            contextHomeProbability = {tip['context_home_probability']},\n"
             "        ),"
         )
     return (

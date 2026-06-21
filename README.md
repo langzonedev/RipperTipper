@@ -45,3 +45,11 @@ The current free-data pipeline also rebuilds Elo team strength from completed
 matches, compares recent form and rest, estimates travel, checks venue weather,
 and generates a short explanation for every recommendation. Its inspectable
 output is stored in `backend/output/current_round.json`.
+
+Version 0.3 refreshes current model consensus whenever the Android app opens or
+the user taps `REFRESH`. It caches the last successful result for offline use,
+shows its age, and marks changed recommendations. Android background work checks
+approximately every six hours, every two hours within three days of the first
+match, and every 30 minutes during the final 24 hours. Android may defer
+background work to protect battery; opening the app always performs an immediate
+check.

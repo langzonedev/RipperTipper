@@ -7,7 +7,7 @@ object PredictionSnapshot {
     const val roundName = "Round 16"
     const val roundDates = "25–28 June 2026 · Adelaide time"
     const val status = "26 models + match context"
-    const val updatedLabel = "Updated 21 June, 6:12 pm"
+    const val updatedLabel = "Updated 21 June, 7:41 pm"
 
     val tips = listOf(
         Tip(
@@ -20,6 +20,9 @@ object PredictionSnapshot {
             venue = "Gabba",
             reason = "16 of 25 tracked models favour Brisbane Lions. Sydney rates better historically, keeping this pick tighter. Recent form runs against the pick, so confidence is restrained.",
             modelCount = 25,
+            kickoffEpochMillis = 1782379800000L,
+            baselineModelHomeProbability = 0.522676,
+            contextHomeProbability = 0.494515,
         ),
         Tip(
             id = 38625,
@@ -31,6 +34,9 @@ object PredictionSnapshot {
             venue = "MCG",
             reason = "25 of 26 tracked models favour Hawthorn. Hawthorn also rates higher on results-based team strength. The forecast looks settled, so weather should have little influence.",
             modelCount = 26,
+            kickoffEpochMillis = 1782466800000L,
+            baselineModelHomeProbability = 0.716454,
+            contextHomeProbability = 0.838323,
         ),
         Tip(
             id = 38623,
@@ -42,6 +48,9 @@ object PredictionSnapshot {
             venue = "Marvel Stadium",
             reason = "25 of 25 tracked models favour Carlton. Carlton also rates higher on results-based team strength. Carlton has the stronger recent five-game record.",
             modelCount = 25,
+            kickoffEpochMillis = 1782530100000L,
+            baselineModelHomeProbability = 0.835108,
+            contextHomeProbability = 0.825944,
         ),
         Tip(
             id = 38624,
@@ -53,6 +62,9 @@ object PredictionSnapshot {
             venue = "MCG",
             reason = "25 of 25 tracked models favour Collingwood. Collingwood also rates higher on results-based team strength. The forecast looks settled, so weather should have little influence.",
             modelCount = 25,
+            kickoffEpochMillis = 1782540900000L,
+            baselineModelHomeProbability = 0.85124,
+            contextHomeProbability = 0.945148,
         ),
         Tip(
             id = 38627,
@@ -64,6 +76,9 @@ object PredictionSnapshot {
             venue = "Adelaide Oval",
             reason = "24 of 25 tracked models favour Adelaide. Adelaide also rates higher on results-based team strength. Adelaide has the stronger recent five-game record.",
             modelCount = 25,
+            kickoffEpochMillis = 1782552900000L,
+            baselineModelHomeProbability = 0.325884,
+            contextHomeProbability = 0.133128,
         ),
         Tip(
             id = 38626,
@@ -75,6 +90,9 @@ object PredictionSnapshot {
             venue = "Marvel Stadium",
             reason = "25 of 25 tracked models favour North Melbourne. North Melbourne also rates higher on results-based team strength. North Melbourne has the stronger recent five-game record.",
             modelCount = 25,
+            kickoffEpochMillis = 1782623700000L,
+            baselineModelHomeProbability = 0.664972,
+            contextHomeProbability = 0.739661,
         ),
         Tip(
             id = 38628,
@@ -86,6 +104,9 @@ object PredictionSnapshot {
             venue = "Optus Stadium",
             reason = "24 of 25 tracked models favour Fremantle. Fremantle also rates higher on results-based team strength. Fremantle has the stronger recent five-game record.",
             modelCount = 25,
+            kickoffEpochMillis = 1782630600000L,
+            baselineModelHomeProbability = 0.753448,
+            contextHomeProbability = 0.918525,
         ),
     )
 }

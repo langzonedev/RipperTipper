@@ -7,6 +7,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import com.langzonedev.rippertipper.ui.RipperTipperApp
 import com.langzonedev.rippertipper.ui.theme.RipperTipperTheme
+import com.langzonedev.rippertipper.data.LiveRefreshWorker
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,6 +19,7 @@ class MainActivity : ComponentActivity() {
                 android.graphics.Color.TRANSPARENT,
             ),
         )
+        LiveRefreshWorker.schedule(this)
         setContent {
             RipperTipperTheme {
                 RipperTipperApp()
