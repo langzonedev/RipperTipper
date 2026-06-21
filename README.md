@@ -33,4 +33,3 @@ then expose Ripper Tipper's final recommendations through a small API.
 
 Initial public fixture and prediction data will be sourced server-side from
 Squiggle in accordance with its caching and identification requirements.
-
