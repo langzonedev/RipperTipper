@@ -78,7 +78,7 @@ fun RipperTipperApp() {
         }
         item {
             Text(
-                text = "Demo predictions only — live data comes next.",
+                text = "Fixture and consensus snapshot · 21 June 2026",
                 style = MaterialTheme.typography.bodyMedium,
                 color = InkMuted,
                 textAlign = TextAlign.Center,
@@ -127,7 +127,7 @@ private fun Hero() {
         Spacer(Modifier.height(30.dp))
 
         Text(
-            text = "Round 15",
+            text = "NEXT UP  ·  ${SampleTips.roundName.uppercase()}",
             color = Gold,
             style = MaterialTheme.typography.labelLarge,
         )
@@ -138,7 +138,7 @@ private fun Hero() {
         )
         Spacer(Modifier.height(12.dp))
         Text(
-            text = "No footy homework required.",
+            text = SampleTips.roundDates,
             color = Color.White.copy(alpha = 0.68f),
             style = MaterialTheme.typography.bodyLarge,
         )
@@ -156,12 +156,12 @@ private fun RoundSummary() {
     ) {
         Column {
             Text(
-                text = "8 PICKS READY",
+                text = "${SampleTips.round.size} PICKS READY",
                 style = MaterialTheme.typography.labelLarge,
                 color = Forest,
             )
             Text(
-                text = "Updated today, 10:42 am",
+                text = "Round 15 is currently in progress",
                 style = MaterialTheme.typography.bodyMedium,
                 color = InkMuted,
             )
@@ -253,7 +253,7 @@ private fun TipCard(
                     )
                     Spacer(Modifier.height(5.dp))
                     Text(
-                        text = "The model currently favours ${tip.recommendedTeam} after combining recent form, venue advantage and consensus predictions.",
+                        text = "Current computer-model consensus favours ${tip.recommendedTeam}. Live Ripper Tipper analysis will add form, injuries and late team news.",
                         style = MaterialTheme.typography.bodyMedium,
                         color = InkMuted,
                     )
@@ -290,4 +290,3 @@ private fun RipperTipperPreview() {
         RipperTipperApp()
     }
 }
-
