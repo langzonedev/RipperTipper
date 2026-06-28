@@ -284,7 +284,7 @@ private fun TipCard(
             Spacer(Modifier.height(14.dp))
 
             Text(
-                text = "PICK",
+                text = if (tip.resultWinner == null) "PICK" else "WINNER",
                 style = MaterialTheme.typography.labelLarge,
                 color = InkMuted,
             )
@@ -321,7 +321,11 @@ private fun TipCard(
                     color = InkMuted,
                     modifier = Modifier.weight(1f),
                 )
-                ConfidencePill(tip)
+                if (tip.resultLabel == null) {
+                    ConfidencePill(tip)
+                } else {
+                    ResultPill(tip.resultLabel)
+                }
             }
 
             AnimatedVisibility(visible = expanded) {
@@ -331,7 +335,7 @@ private fun TipCard(
                         color = MaterialTheme.colorScheme.outline,
                     )
                     Text(
-                        text = "Why this pick",
+                        text = if (tip.resultWinner == null) "Why this pick" else "Final result",
                         style = MaterialTheme.typography.titleMedium,
                     )
                     Spacer(Modifier.height(5.dp))
@@ -343,6 +347,21 @@ private fun TipCard(
                 }
             }
         }
+    }
+}
+
+@Composable
+private fun ResultPill(resultLabel: String) {
+    Surface(
+        color = Forest.copy(alpha = 0.10f),
+        shape = CircleShape,
+    ) {
+        Text(
+            text = "FINAL  ·  $resultLabel",
+            color = Forest,
+            style = MaterialTheme.typography.labelLarge,
+            modifier = Modifier.padding(horizontal = 10.dp, vertical = 6.dp),
+        )
     }
 }
 

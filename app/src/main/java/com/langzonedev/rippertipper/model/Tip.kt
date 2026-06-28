@@ -20,6 +20,8 @@ data class Tip(
     val baselineModelHomeProbability: Double,
     val contextHomeProbability: Double,
     val changed: Boolean = false,
+    val resultWinner: String? = null,
+    val resultLabel: String? = null,
 ) {
     val confidence: Confidence
         get() = confidenceFor(confidencePercent)

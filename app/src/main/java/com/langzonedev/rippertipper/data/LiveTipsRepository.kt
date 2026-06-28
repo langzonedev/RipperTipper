@@ -40,7 +40,11 @@ class LiveTipsRepository(context: Context) {
         val payload = fetch(
             "https://api.squiggle.com.au/?q=tips;year=$year;round=$round",
         )
+        val gamesPayload = fetch(
+            "https://api.squiggle.com.au/?q=games;year=$year;round=$round",
+        )
         val tipsJson = payload.getJSONArray("tips")
+        val gamesJson = gamesPayload.getJSONArray("games")
         val byGame = mutableMapOf<Int, MutableList<JSONObject>>()
         for (index in 0 until tipsJson.length()) {
             val tip = tipsJson.getJSONObject(index)
@@ -48,9 +52,15 @@ class LiveTipsRepository(context: Context) {
                 byGame.getOrPut(tip.getInt("gameid")) { mutableListOf() }.add(tip)
             }
         }
+        val gamesById = mutableMapOf<Int, JSONObject>()
+        for (index in 0 until gamesJson.length()) {
+            val game = gamesJson.getJSONObject(index)
+            gamesById[game.getInt("id")] = game
+        }
 
         val editor = preferences.edit()
         val refreshed = PredictionSnapshot.tips.map { baseline ->
+            resultTip(baseline, gamesById[baseline.id])?.let { return@map it }
             val models = byGame[baseline.id].orEmpty()
             if (models.isEmpty()) return@map baseline
 
@@ -97,6 +107,29 @@ class LiveTipsRepository(context: Context) {
             recommendedTeam = preferences.getString(pickKey(tip.id), tip.recommendedTeam)
                 ?: tip.recommendedTeam,
             changed = preferences.getBoolean(changedKey(tip.id), false),
+        )
+    }
+
+    private fun resultTip(tip: Tip, game: JSONObject?): Tip? {
+        if (game == null || game.optInt("complete", 0) < 100) return null
+        val awayScore = game.optInt("ascore")
+        val homeScore = game.optInt("hscore")
+        val winner = when {
+            homeScore > awayScore -> tip.homeTeam
+            awayScore > homeScore -> tip.awayTeam
+            else -> "Draw"
+        }
+        return tip.copy(
+            recommendedTeam = winner,
+            confidencePercent = 100,
+            reason = if (winner == "Draw") {
+                "Final result: ${tip.awayTeam} $awayScore, ${tip.homeTeam} $homeScore."
+            } else {
+                "$winner won. Final result: ${tip.awayTeam} $awayScore, ${tip.homeTeam} $homeScore."
+            },
+            changed = false,
+            resultWinner = winner,
+            resultLabel = "${tip.awayTeam} $awayScore  ·  ${tip.homeTeam} $homeScore",
         )
     }
 

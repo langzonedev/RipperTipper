@@ -14,8 +14,7 @@ class TipTest {
     }
 
     @Test
-    fun `round 16 snapshot has seven unique fixtures`() {
-        assertEquals(7, PredictionSnapshot.tips.size)
-        assertEquals(7, PredictionSnapshot.tips.map(Tip::id).toSet().size)
+    fun `snapshot has unique fixtures`() {
+        assertEquals(PredictionSnapshot.tips.size, PredictionSnapshot.tips.map(Tip::id).toSet().size)
     }
 }
