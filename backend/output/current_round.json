@@ -2,8 +2,8 @@
   "round_name": "Round 19",
   "round_dates": "16\u201319 July 2026 \u00b7 Adelaide time",
   "status": "28 models + injury/form context",
-  "updated_at": "2026-07-14T13:19:40.021034+00:00",
-  "updated_label": "Updated 14 July, 10:49 pm",
+  "updated_at": "2026-07-14T19:41:20.490727+00:00",
+  "updated_label": "Updated 15 July, 5:11 am",
   "sources": [
     "Squiggle",
     "Open-Meteo",
@@ -47,9 +47,9 @@
         "away_rest_days": 5,
         "away_travel_km": 64,
         "weather": {
-          "rain_probability": 2,
-          "wind_max": 9.4,
-          "temperature_max": 14.7
+          "rain_probability": 10,
+          "wind_max": 9.0,
+          "temperature_max": 14.4
         }
       }
     },
@@ -90,9 +90,9 @@
         "away_rest_days": 5,
         "away_travel_km": 1163,
         "weather": {
-          "rain_probability": 100,
-          "wind_max": 15.7,
-          "temperature_max": 15.6
+          "rain_probability": 98,
+          "wind_max": 13.7,
+          "temperature_max": 15.8
         }
       }
     },
@@ -134,8 +134,8 @@
         "away_travel_km": 2131,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 14.2,
-          "temperature_max": 16.5
+          "wind_max": 10.2,
+          "temperature_max": 15.9
         }
       }
     },
@@ -177,8 +177,8 @@
         "away_travel_km": 0,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 9.2,
-          "temperature_max": 14.8
+          "wind_max": 8.8,
+          "temperature_max": 14.5
         }
       }
     },
@@ -220,8 +220,8 @@
         "away_travel_km": 4,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 10.5,
-          "temperature_max": 14.2
+          "wind_max": 10.7,
+          "temperature_max": 14.0
         }
       }
     },
@@ -263,8 +263,8 @@
         "away_travel_km": 3604,
         "weather": {
           "rain_probability": 90,
-          "wind_max": 21.9,
-          "temperature_max": 16.2
+          "wind_max": 16.6,
+          "temperature_max": 16.9
         }
       }
     },
@@ -306,7 +306,7 @@
         "away_travel_km": 3,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 15.3,
+          "wind_max": 11.0,
           "temperature_max": 15.7
         }
       }
@@ -323,8 +323,8 @@
       "context_reason": "Western Bulldogs also rates higher on results-based team strength. Western Bulldogs has the stronger recent five-game record.",
       "model_count": 28,
       "kickoff_epoch_millis": 1784438100000,
-      "baseline_model_home_probability": 0.546729,
-      "context_home_probability": -0.037421,
+      "baseline_model_home_probability": 0.546743,
+      "context_home_probability": -0.037425,
       "metrics": {
         "model_home_probability": 0.5467,
         "elo_home_probability": 0.3699,
@@ -348,9 +348,9 @@
         "away_rest_days": 7,
         "away_travel_km": 1343,
         "weather": {
-          "rain_probability": 47,
-          "wind_max": 30.6,
-          "temperature_max": 20.9
+          "rain_probability": 49,
+          "wind_max": 29.1,
+          "temperature_max": 19.5
         }
       }
     },
@@ -366,8 +366,8 @@
       "context_reason": "Greater Western Sydney also rates higher on results-based team strength. Greater Western Sydney has the stronger recent five-game record.",
       "model_count": 28,
       "kickoff_epoch_millis": 1784443200000,
-      "baseline_model_home_probability": 0.197868,
-      "context_home_probability": -0.316588,
+      "baseline_model_home_probability": 0.197879,
+      "context_home_probability": -0.316591,
       "metrics": {
         "model_home_probability": 0.1979,
         "elo_home_probability": 0.0676,
@@ -392,8 +392,8 @@
         "away_travel_km": 707,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 14.7,
-          "temperature_max": 14.8
+          "wind_max": 11.2,
+          "temperature_max": 15.7
         }
       }
     }

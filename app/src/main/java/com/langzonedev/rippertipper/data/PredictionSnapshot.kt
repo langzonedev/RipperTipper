@@ -7,7 +7,7 @@ object PredictionSnapshot {
     const val roundName = "Round 19"
     const val roundDates = "16–19 July 2026 · Adelaide time"
     const val status = "28 models + injury/form context"
-    const val updatedLabel = "Updated 14 July, 10:49 pm"
+    const val updatedLabel = "Updated 15 July, 5:11 am"
 
     val tips = listOf(
         Tip(
@@ -119,8 +119,8 @@ object PredictionSnapshot {
             reason = "7 of 28 tracked models favour Western Bulldogs. Western Bulldogs also rates higher on results-based team strength. Western Bulldogs has the stronger recent five-game record.",
             modelCount = 28,
             kickoffEpochMillis = 1784438100000L,
-            baselineModelHomeProbability = 0.546729,
-            contextHomeProbability = -0.037421,
+            baselineModelHomeProbability = 0.546743,
+            contextHomeProbability = -0.037425,
         ),
         Tip(
             id = 38648,
@@ -133,8 +133,8 @@ object PredictionSnapshot {
             reason = "28 of 28 tracked models favour Greater Western Sydney. Greater Western Sydney also rates higher on results-based team strength. Greater Western Sydney has the stronger recent five-game record.",
             modelCount = 28,
             kickoffEpochMillis = 1784443200000L,
-            baselineModelHomeProbability = 0.197868,
-            contextHomeProbability = -0.316588,
+            baselineModelHomeProbability = 0.197879,
+            contextHomeProbability = -0.316591,
         ),
     )
 }
