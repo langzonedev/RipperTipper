@@ -7,15 +7,13 @@ on:
       - main
     paths:
       - ".github/workflows/update-predictions.yml"
-      - "backend/**"
-      - "public/**"
   schedule:
     # Adelaide is UTC+9:30/10:30. This gives roughly morning, afternoon,
     # evening, and late-night refreshes without chewing through minutes.
     - cron: "15 0,6,12,18 * * *"
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -79,10 +77,20 @@ jobs:
           Path("public/index.html").write_text(html, encoding="utf-8")
           PY
 
+      - name: Commit refreshed prediction JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add backend/output/current_round.json app/src/main/java/com/langzonedev/rippertipper/data/PredictionSnapshot.kt public/current_round.json public/index.html
+          if git diff --cached --quiet; then
+            echo "No prediction changes to commit."
+          else
+            git commit -m "Update hosted prediction data"
+            git push
+          fi
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

@@ -24,7 +24,7 @@ fallback snapshot consumed by the app.
 
 The scheduled GitHub Actions workflow `.github/workflows/update-predictions.yml`
 runs the same command, copies the JSON to `public/current_round.json`, and
-publishes it through GitHub Pages.
+commits refreshed prediction data back to the repository.
 
 Squiggle consensus carries most weight. Context adjustments are deliberately
 small and capped. The model also applies a small upset-risk drag to fragile

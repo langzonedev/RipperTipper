@@ -9,8 +9,11 @@ flowchart TD
     backend --> sources["Free data sources<br/>Squiggle, AFL injury list, Open-Meteo"]
     sources --> model["Prediction model<br/>consensus, Elo, form, power, injuries, weather, upset drag"]
     model --> json["public/current_round.json"]
-    json --> pages["GitHub Pages<br/>https://langzonedev.github.io/RipperTipper/current_round.json"]
-    pages --> app["Android app"]
+    json --> repo["Git commit<br/>main branch"]
+    repo --> raw["Raw GitHub URL<br/>fallback endpoint"]
+    repo --> pages["GitHub Pages<br/>primary endpoint"]
+    raw --> app["Android app"]
+    pages --> app
     app --> fallback["Fallbacks<br/>baked snapshot + on-phone Squiggle rollover"]
 ```
 
@@ -18,9 +21,10 @@ flowchart TD
 
 1. GitHub Actions runs the backend on a schedule.
 2. The backend generates `backend/output/current_round.json`.
-3. The workflow publishes that JSON to GitHub Pages as `current_round.json`.
-4. The Android app checks the hosted JSON whenever it refreshes.
-5. If the hosted JSON is unavailable, the app falls back to its baked snapshot
+3. The workflow copies that JSON to `public/current_round.json`.
+4. The workflow commits refreshed prediction data back to the repository.
+5. The Android app checks hosted JSON whenever it refreshes.
+6. If the hosted JSON is unavailable, the app falls back to its baked snapshot
    and on-device Squiggle round rollover.
 
 The app should remain a presentation layer: it shows the current round, one pick
@@ -29,12 +33,12 @@ without forcing a new APK for every model tweak.
 
 ## Hosted endpoint
 
-Expected production URL:
+Potential production URLs:
 
 ```text
 https://langzonedev.github.io/RipperTipper/current_round.json
+https://raw.githubusercontent.com/langzonedev/RipperTipper/main/public/current_round.json
 ```
 
-If GitHub Pages has not been enabled yet, open the repository settings and set
-Pages to deploy from GitHub Actions. The workflow is already configured for
-Actions-based Pages deployment.
+GitHub Pages is enabled for this public repository. The Android app tries Pages
+first, then raw GitHub, then its local/on-device fallbacks.

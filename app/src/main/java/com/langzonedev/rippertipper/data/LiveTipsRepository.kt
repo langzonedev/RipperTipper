@@ -50,7 +50,18 @@ class LiveTipsRepository(context: Context) {
     }
 
     private fun refreshHosted(): LiveTipsResult {
-        val payload = fetch(HOSTED_PREDICTIONS_URL)
+        var lastFailure: Exception? = null
+        for (url in HOSTED_PREDICTION_URLS) {
+            try {
+                return refreshHosted(fetch(url))
+            } catch (error: Exception) {
+                lastFailure = error
+            }
+        }
+        throw lastFailure ?: IllegalStateException("No hosted prediction URLs configured")
+    }
+
+    private fun refreshHosted(payload: JSONObject): LiveTipsResult {
         val tipsJson = payload.getJSONArray("tips")
         val editor = preferences.edit()
         val tips = mutableListOf<Tip>()
@@ -363,8 +374,10 @@ class LiveTipsRepository(context: Context) {
     }
 
     companion object {
-        private const val HOSTED_PREDICTIONS_URL =
-            "https://langzonedev.github.io/RipperTipper/current_round.json"
+        private val HOSTED_PREDICTION_URLS = listOf(
+            "https://langzonedev.github.io/RipperTipper/current_round.json",
+            "https://raw.githubusercontent.com/langzonedev/RipperTipper/main/public/current_round.json",
+        )
         private val ADELAIDE: ZoneId = ZoneId.of("Australia/Adelaide")
         private val MELBOURNE: ZoneId = ZoneId.of("Australia/Melbourne")
         private val GAME_TIME_FORMATTER: DateTimeFormatter =

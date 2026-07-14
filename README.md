@@ -18,17 +18,26 @@ The app is a native Kotlin and Jetpack Compose Android application containing:
 The app checks the hosted prediction JSON first, then falls back to the baked
 APK snapshot and direct Squiggle round rollover.
 
-## Hosted prediction endpoint
+## Hosted prediction data
 
-GitHub Actions runs the backend on a schedule and publishes the latest generated
+GitHub Actions runs the backend on a schedule and commits the latest generated
 tips to:
+
+```text
+public/current_round.json
+```
+
+The Android app checks the GitHub Pages endpoint first:
 
 ```text
 https://langzonedev.github.io/RipperTipper/current_round.json
 ```
 
-If the endpoint is not live yet, enable GitHub Pages for the repository and set
-the source to GitHub Actions.
+It can also fall back to raw GitHub:
+
+```text
+https://raw.githubusercontent.com/langzonedev/RipperTipper/main/public/current_round.json
+```
 
 ## Run locally
 
@@ -50,8 +59,8 @@ Google Play release.
 
 The Android app remains a focused presentation client. A scheduled GitHub
 Actions backend collects fixtures, results, model predictions and
-time-sensitive reports, then exposes Ripper Tipper's final recommendations as a
-small JSON endpoint through GitHub Pages.
+time-sensitive reports, then writes Ripper Tipper's final recommendations as a
+small JSON file.
 
 The current free-data pipeline rebuilds Elo team strength from completed
 matches, compares recent form and rest, estimates travel, checks venue weather,
