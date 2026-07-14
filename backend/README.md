@@ -1,7 +1,8 @@
 # Ripper Tipper prediction pipeline
 
-This directory builds the static prediction snapshot consumed by the Android
-app. It uses free data sources and keeps every adjustment explainable.
+This directory builds the prediction snapshot consumed by the Android app and
+published by GitHub Actions. It uses free data sources and keeps every
+adjustment explainable.
 
 Current inputs:
 
@@ -19,7 +20,11 @@ Current inputs:
 
 Run `python backend/update_predictions.py`. The command writes an inspectable
 JSON result to `backend/output/current_round.json` and generates the Kotlin
-snapshot consumed by the app.
+fallback snapshot consumed by the app.
+
+The scheduled GitHub Actions workflow `.github/workflows/update-predictions.yml`
+runs the same command, copies the JSON to `public/current_round.json`, and
+publishes it through GitHub Pages.
 
 Squiggle consensus carries most weight. Context adjustments are deliberately
 small and capped. The model also applies a small upset-risk drag to fragile

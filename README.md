@@ -6,15 +6,29 @@ for every match, with a confidence level and optional supporting detail.
 
 ## Current state
 
-The first milestone is a native Kotlin and Jetpack Compose application containing:
+The app is a native Kotlin and Jetpack Compose Android application containing:
 
 - a clean current-round screen;
 - one recommended team per match;
 - visible prediction confidence;
 - expandable reasoning;
-- sample data while the live prediction service is built.
+- hosted prediction refresh through GitHub Pages;
+- baked and on-device fallbacks if the hosted endpoint is unavailable.
 
-The on-screen predictions are placeholders and must not yet be used as real tips.
+The app checks the hosted prediction JSON first, then falls back to the baked
+APK snapshot and direct Squiggle round rollover.
+
+## Hosted prediction endpoint
+
+GitHub Actions runs the backend on a schedule and publishes the latest generated
+tips to:
+
+```text
+https://langzonedev.github.io/RipperTipper/current_round.json
+```
+
+If the endpoint is not live yet, enable GitHub Pages for the repository and set
+the source to GitHub Actions.
 
 ## Run locally
 
@@ -32,24 +46,17 @@ from this repository on the phone. Android may ask you to allow the browser or
 GitHub app to install unknown apps. This is a development build and is not a
 Google Play release.
 
-## Planned architecture
+## Architecture
 
-The Android app will remain a focused presentation client. A separate backend
-will collect fixtures, results, model predictions and time-sensitive reports,
-then expose Ripper Tipper's final recommendations through a small API.
+The Android app remains a focused presentation client. A scheduled GitHub
+Actions backend collects fixtures, results, model predictions and
+time-sensitive reports, then exposes Ripper Tipper's final recommendations as a
+small JSON endpoint through GitHub Pages.
 
-Initial public fixture and prediction data will be sourced server-side from
-Squiggle in accordance with its caching and identification requirements.
-
-The current free-data pipeline also rebuilds Elo team strength from completed
+The current free-data pipeline rebuilds Elo team strength from completed
 matches, compares recent form and rest, estimates travel, checks venue weather,
-and generates a short explanation for every recommendation. Its inspectable
-output is stored in `backend/output/current_round.json`.
+reads AFL injury/availability notes, applies an upset-risk adjustment, and
+generates a short explanation for every recommendation. Its inspectable output
+is stored in `backend/output/current_round.json`.
 
-Version 0.3 refreshes current model consensus whenever the Android app opens or
-the user taps `REFRESH`. It caches the last successful result for offline use,
-shows its age, and marks changed recommendations. Android background work checks
-approximately every six hours, every two hours within three days of the first
-match, and every 30 minutes during the final 24 hours. Android may defer
-background work to protect battery; opening the app always performs an immediate
-check.
+See `docs/architecture.md` for the hosted backend flow.

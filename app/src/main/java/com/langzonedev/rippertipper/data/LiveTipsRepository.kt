@@ -42,6 +42,36 @@ class LiveTipsRepository(context: Context) {
     }
 
     fun refresh(): LiveTipsResult {
+        return try {
+            refreshHosted()
+        } catch (_: Exception) {
+            refreshFromSquiggle()
+        }
+    }
+
+    private fun refreshHosted(): LiveTipsResult {
+        val payload = fetch(HOSTED_PREDICTIONS_URL)
+        val tipsJson = payload.getJSONArray("tips")
+        val editor = preferences.edit()
+        val tips = mutableListOf<Tip>()
+        for (index in 0 until tipsJson.length()) {
+            val tip = hostedTip(tipsJson.getJSONObject(index), editor)
+            tips.add(tip)
+        }
+        val now = System.currentTimeMillis()
+        editor.putLong(KEY_UPDATED_AT, now).apply()
+        return LiveTipsResult(
+            tips = tips.sortedBy(Tip::kickoffEpochMillis),
+            roundName = payload.getString("round_name"),
+            roundDates = payload.getString("round_dates"),
+            status = payload.optString("status", "Hosted prediction model"),
+            updatedLabel = payload.optString("updated_label", "Updated just now"),
+            updatedAt = parseHostedUpdatedAt(payload.optString("updated_at", "")) ?: now,
+            changedCount = tips.count(Tip::changed),
+        )
+    }
+
+    private fun refreshFromSquiggle(): LiveTipsResult {
         val target = findTargetRound()
         val tipsPayload = fetch(
             "https://api.squiggle.com.au/?q=tips;year=${target.year};round=${target.round}",
@@ -70,6 +100,31 @@ class LiveTipsRepository(context: Context) {
             updatedLabel = "Updated just now",
             updatedAt = now,
             changedCount = refreshed.count(Tip::changed),
+        )
+    }
+
+    private fun hostedTip(row: JSONObject, editor: SharedPreferences.Editor): Tip {
+        val recommended = row.getString("recommended_team")
+        val gameId = row.getInt("id")
+        val previous = preferences.getString(pickKey(gameId), recommended)
+        val changed = previous != recommended
+        editor.putString(pickKey(gameId), recommended)
+        if (changed) editor.putBoolean(changedKey(gameId), true)
+
+        return Tip(
+            id = gameId,
+            awayTeam = row.getString("away_team"),
+            homeTeam = row.getString("home_team"),
+            recommendedTeam = recommended,
+            confidencePercent = row.getInt("confidence_percent"),
+            startTime = row.getString("start_time"),
+            venue = row.getString("venue"),
+            reason = row.getString("reason"),
+            modelCount = row.optInt("model_count", 0),
+            kickoffEpochMillis = row.getLong("kickoff_epoch_millis"),
+            baselineModelHomeProbability = row.optDouble("baseline_model_home_probability", 0.5),
+            contextHomeProbability = row.optDouble("context_home_probability", 0.5),
+            changed = changed || preferences.getBoolean(changedKey(gameId), false),
         )
     }
 
@@ -299,7 +354,17 @@ class LiveTipsRepository(context: Context) {
         }
     }
 
+    private fun parseHostedUpdatedAt(value: String): Long? {
+        return try {
+            Instant.parse(value).toEpochMilli()
+        } catch (_: Exception) {
+            null
+        }
+    }
+
     companion object {
+        private const val HOSTED_PREDICTIONS_URL =
+            "https://langzonedev.github.io/RipperTipper/current_round.json"
         private val ADELAIDE: ZoneId = ZoneId.of("Australia/Adelaide")
         private val MELBOURNE: ZoneId = ZoneId.of("Australia/Melbourne")
         private val GAME_TIME_FORMATTER: DateTimeFormatter =

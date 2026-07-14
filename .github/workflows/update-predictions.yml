@@ -1,0 +1,92 @@
+name: Update hosted predictions
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/update-predictions.yml"
+      - "backend/**"
+      - "public/**"
+  schedule:
+    # Adelaide is UTC+9:30/10:30. This gives roughly morning, afternoon,
+    # evening, and late-night refreshes without chewing through minutes.
+    - cron: "15 0,6,12,18 * * *"
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run backend tests
+        working-directory: backend
+        run: python -m unittest test_update_predictions
+
+      - name: Generate prediction snapshot
+        run: python backend/update_predictions.py
+
+      - name: Prepare public JSON endpoint
+        run: |
+          mkdir -p public
+          cp backend/output/current_round.json public/current_round.json
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          data = json.loads(Path("public/current_round.json").read_text())
+          picks = "\n".join(
+              f"<li>{tip['away_team']} at {tip['home_team']}: "
+              f"<strong>{tip['recommended_team']}</strong> "
+              f"({tip['confidence_percent']}%)</li>"
+              for tip in data["tips"]
+          )
+          html = f"""<!doctype html>
+          <html lang=\"en\">
+          <head>
+            <meta charset=\"utf-8\">
+            <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+            <title>Ripper Tipper predictions</title>
+          </head>
+          <body>
+            <h1>Ripper Tipper</h1>
+            <p>{data['round_name']} · {data['round_dates']}</p>
+            <p>{data['status']} · {data['updated_label']}</p>
+            <p><a href=\"current_round.json\">current_round.json</a></p>
+            <ul>{picks}</ul>
+          </body>
+          </html>
+          """
+          Path("public/index.html").write_text(html, encoding="utf-8")
+          PY
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
