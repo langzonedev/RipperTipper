@@ -7,7 +7,7 @@ object PredictionSnapshot {
     const val roundName = "Round 19"
     const val roundDates = "16–19 July 2026 · Adelaide time"
     const val status = "28 models + injury/form context"
-    const val updatedLabel = "Updated 14 July, 10:00 pm"
+    const val updatedLabel = "Updated 14 July, 10:49 pm"
 
     val tips = listOf(
         Tip(
