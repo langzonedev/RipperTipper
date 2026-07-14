@@ -44,7 +44,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.langzonedev.rippertipper.data.LiveTipsRepository
-import com.langzonedev.rippertipper.data.PredictionSnapshot
 import com.langzonedev.rippertipper.model.Confidence
 import com.langzonedev.rippertipper.model.Tip
 import com.langzonedev.rippertipper.ui.theme.Caution
@@ -66,6 +65,9 @@ fun RipperTipperApp() {
     val repository = remember { LiveTipsRepository(context.applicationContext) }
     val initial = remember { repository.cached() }
     var tips by remember { mutableStateOf(initial.tips) }
+    var roundName by remember { mutableStateOf(initial.roundName) }
+    var roundDates by remember { mutableStateOf(initial.roundDates) }
+    var status by remember { mutableStateOf(initial.status) }
     var updatedLabel by remember { mutableStateOf(initial.updatedLabel) }
     var updatedAt by remember { mutableStateOf(initial.updatedAt) }
     var changedCount by remember { mutableIntStateOf(initial.changedCount) }
@@ -79,6 +81,9 @@ fun RipperTipperApp() {
             try {
                 val result = withContext(Dispatchers.IO) { repository.refresh() }
                 tips = result.tips
+                roundName = result.roundName
+                roundDates = result.roundDates
+                status = result.status
                 updatedLabel = result.updatedLabel
                 updatedAt = result.updatedAt
                 changedCount = result.changedCount
@@ -113,11 +118,12 @@ fun RipperTipperApp() {
                 .navigationBarsPadding(),
         ) {
             item {
-                Hero()
+                Hero(roundName = roundName, roundDates = roundDates)
             }
             item {
                 RoundSummary(
                     tipsCount = tips.size,
+                    status = status,
                     updatedLabel = updatedLabel,
                     changedCount = changedCount,
                     refreshing = refreshing,
@@ -150,7 +156,7 @@ fun RipperTipperApp() {
 }
 
 @Composable
-private fun Hero() {
+private fun Hero(roundName: String, roundDates: String) {
     Column(
         modifier = Modifier
             .fillMaxWidth()
@@ -185,7 +191,7 @@ private fun Hero() {
         Spacer(Modifier.height(30.dp))
 
         Text(
-            text = "NEXT UP  ·  ${PredictionSnapshot.roundName.uppercase()}",
+            text = "NEXT UP  ·  ${roundName.uppercase()}",
             color = Gold,
             style = MaterialTheme.typography.labelLarge,
         )
@@ -196,7 +202,7 @@ private fun Hero() {
         )
         Spacer(Modifier.height(12.dp))
         Text(
-            text = PredictionSnapshot.roundDates,
+            text = roundDates,
             color = Color.White.copy(alpha = 0.68f),
             style = MaterialTheme.typography.bodyLarge,
         )
@@ -206,6 +212,7 @@ private fun Hero() {
 @Composable
 private fun RoundSummary(
     tipsCount: Int,
+    status: String,
     updatedLabel: String,
     changedCount: Int,
     refreshing: Boolean,
@@ -228,7 +235,7 @@ private fun RoundSummary(
                 text = if (changedCount > 0) {
                     "$changedCount pick${if (changedCount == 1) "" else "s"} changed"
                 } else {
-                    updatedLabel
+                    "$updatedLabel · $status"
                 },
                 style = MaterialTheme.typography.bodyMedium,
                 color = InkMuted,
