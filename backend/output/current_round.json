@@ -2,8 +2,8 @@
   "round_name": "Round 19",
   "round_dates": "16\u201319 July 2026 \u00b7 Adelaide time",
   "status": "29 models + injury/form context",
-  "updated_at": "2026-07-15T14:07:13.478853+00:00",
-  "updated_label": "Updated 15 July, 11:37 pm",
+  "updated_at": "2026-07-15T19:34:26.229824+00:00",
+  "updated_label": "Updated 16 July, 5:04 am",
   "sources": [
     "Squiggle",
     "Open-Meteo",
@@ -22,12 +22,12 @@
       "context_reason": "Geelong also rates higher on results-based team strength. Recent form runs against the pick, so confidence is restrained.",
       "model_count": 29,
       "kickoff_epoch_millis": 1784194200000,
-      "baseline_model_home_probability": 0.726579,
-      "context_home_probability": 0.556872,
+      "baseline_model_home_probability": 0.726669,
+      "context_home_probability": 0.556847,
       "metrics": {
-        "model_home_probability": 0.7266,
+        "model_home_probability": 0.7267,
         "elo_home_probability": 0.8007,
-        "final_home_probability": 0.6892,
+        "final_home_probability": 0.6893,
         "power_home": 346.88,
         "power_away": 309.75,
         "power_adjustment": 0.04,
@@ -47,7 +47,7 @@
         "away_rest_days": 5,
         "away_travel_km": 64,
         "weather": {
-          "rain_probability": 26,
+          "rain_probability": 19,
           "wind_max": 10.0,
           "temperature_max": 15.2
         }
@@ -90,7 +90,7 @@
         "away_rest_days": 5,
         "away_travel_km": 1163,
         "weather": {
-          "rain_probability": 100,
+          "rain_probability": 99,
           "wind_max": 14.9,
           "temperature_max": 15.5
         }
@@ -237,8 +237,8 @@
       "context_reason": "Brisbane Lions also rates higher on results-based team strength. Brisbane Lions has the stronger recent five-game record.",
       "model_count": 29,
       "kickoff_epoch_millis": 1784369400000,
-      "baseline_model_home_probability": 0.193917,
-      "context_home_probability": -0.460252,
+      "baseline_model_home_probability": 0.193872,
+      "context_home_probability": -0.460093,
       "metrics": {
         "model_home_probability": 0.1939,
         "elo_home_probability": 0.0296,
@@ -262,7 +262,7 @@
         "away_rest_days": 6,
         "away_travel_km": 3604,
         "weather": {
-          "rain_probability": 92,
+          "rain_probability": 86,
           "wind_max": 17.8,
           "temperature_max": 17.5
         }
@@ -280,8 +280,8 @@
       "context_reason": "Hawthorn also rates higher on results-based team strength. Hawthorn has the stronger recent five-game record.",
       "model_count": 29,
       "kickoff_epoch_millis": 1784430600000,
-      "baseline_model_home_probability": 0.1043,
-      "context_home_probability": -0.142518,
+      "baseline_model_home_probability": 0.104276,
+      "context_home_probability": -0.142433,
       "metrics": {
         "model_home_probability": 0.1043,
         "elo_home_probability": 0.0408,
@@ -323,8 +323,8 @@
       "context_reason": "Western Bulldogs also rates higher on results-based team strength. Western Bulldogs has the stronger recent five-game record.",
       "model_count": 29,
       "kickoff_epoch_millis": 1784438100000,
-      "baseline_model_home_probability": 0.54621,
-      "context_home_probability": 0.038632,
+      "baseline_model_home_probability": 0.546159,
+      "context_home_probability": 0.038646,
       "metrics": {
         "model_home_probability": 0.5462,
         "elo_home_probability": 0.3699,
@@ -348,7 +348,7 @@
         "away_rest_days": 7,
         "away_travel_km": 1343,
         "weather": {
-          "rain_probability": 69,
+          "rain_probability": 79,
           "wind_max": 28.8,
           "temperature_max": 19.0
         }

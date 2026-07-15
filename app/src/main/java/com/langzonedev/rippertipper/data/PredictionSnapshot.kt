@@ -7,7 +7,7 @@ object PredictionSnapshot {
     const val roundName = "Round 19"
     const val roundDates = "16–19 July 2026 · Adelaide time"
     const val status = "29 models + injury/form context"
-    const val updatedLabel = "Updated 15 July, 11:37 pm"
+    const val updatedLabel = "Updated 16 July, 5:04 am"
 
     val tips = listOf(
         Tip(
@@ -21,8 +21,8 @@ object PredictionSnapshot {
             reason = "29 of 29 tracked models favour Geelong. Geelong also rates higher on results-based team strength. Recent form runs against the pick, so confidence is restrained.",
             modelCount = 29,
             kickoffEpochMillis = 1784194200000L,
-            baselineModelHomeProbability = 0.726579,
-            contextHomeProbability = 0.556872,
+            baselineModelHomeProbability = 0.726669,
+            contextHomeProbability = 0.556847,
         ),
         Tip(
             id = 38653,
@@ -91,8 +91,8 @@ object PredictionSnapshot {
             reason = "28 of 29 tracked models favour Brisbane Lions. Brisbane Lions also rates higher on results-based team strength. Brisbane Lions has the stronger recent five-game record.",
             modelCount = 29,
             kickoffEpochMillis = 1784369400000L,
-            baselineModelHomeProbability = 0.193917,
-            contextHomeProbability = -0.460252,
+            baselineModelHomeProbability = 0.193872,
+            contextHomeProbability = -0.460093,
         ),
         Tip(
             id = 38652,
@@ -105,8 +105,8 @@ object PredictionSnapshot {
             reason = "28 of 29 tracked models favour Hawthorn. Hawthorn also rates higher on results-based team strength. Hawthorn has the stronger recent five-game record.",
             modelCount = 29,
             kickoffEpochMillis = 1784430600000L,
-            baselineModelHomeProbability = 0.1043,
-            contextHomeProbability = -0.142518,
+            baselineModelHomeProbability = 0.104276,
+            contextHomeProbability = -0.142433,
         ),
         Tip(
             id = 38650,
@@ -119,8 +119,8 @@ object PredictionSnapshot {
             reason = "7 of 29 tracked models favour Western Bulldogs. Western Bulldogs also rates higher on results-based team strength. Western Bulldogs has the stronger recent five-game record.",
             modelCount = 29,
             kickoffEpochMillis = 1784438100000L,
-            baselineModelHomeProbability = 0.54621,
-            contextHomeProbability = 0.038632,
+            baselineModelHomeProbability = 0.546159,
+            contextHomeProbability = 0.038646,
         ),
         Tip(
             id = 38648,
