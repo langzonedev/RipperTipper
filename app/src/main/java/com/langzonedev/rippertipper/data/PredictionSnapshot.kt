@@ -7,7 +7,7 @@ object PredictionSnapshot {
     const val roundName = "Round 19"
     const val roundDates = "16–19 July 2026 · Adelaide time"
     const val status = "28 models + injury/form context"
-    const val updatedLabel = "Updated 15 July, 5:11 am"
+    const val updatedLabel = "Updated 15 July, 1:00 pm"
 
     val tips = listOf(
         Tip(
@@ -21,8 +21,8 @@ object PredictionSnapshot {
             reason = "28 of 28 tracked models favour Geelong. Geelong also rates higher on results-based team strength. Recent form runs against the pick, so confidence is restrained.",
             modelCount = 28,
             kickoffEpochMillis = 1784194200000L,
-            baselineModelHomeProbability = 0.743711,
-            contextHomeProbability = 0.606745,
+            baselineModelHomeProbability = 0.743768,
+            contextHomeProbability = 0.606729,
         ),
         Tip(
             id = 38653,
@@ -49,8 +49,8 @@ object PredictionSnapshot {
             reason = "28 of 28 tracked models favour Fremantle. Fremantle also rates higher on results-based team strength. Fremantle has the stronger recent five-game record.",
             modelCount = 28,
             kickoffEpochMillis = 1784344500000L,
-            baselineModelHomeProbability = 0.311271,
-            contextHomeProbability = -0.542891,
+            baselineModelHomeProbability = 0.311232,
+            contextHomeProbability = -0.54288,
         ),
         Tip(
             id = 38651,
@@ -63,8 +63,8 @@ object PredictionSnapshot {
             reason = "27 of 28 tracked models favour Melbourne. Melbourne also rates higher on results-based team strength. Melbourne's recent scoring margins are materially stronger.",
             modelCount = 28,
             kickoffEpochMillis = 1784355300000L,
-            baselineModelHomeProbability = 0.331682,
-            contextHomeProbability = -0.118308,
+            baselineModelHomeProbability = 0.331704,
+            contextHomeProbability = -0.118314,
         ),
         Tip(
             id = 38647,
@@ -77,8 +77,8 @@ object PredictionSnapshot {
             reason = "26 of 28 tracked models favour Collingwood. Collingwood also rates higher on results-based team strength. Squiggle power rankings also lean toward Collingwood.",
             modelCount = 28,
             kickoffEpochMillis = 1784367300000L,
-            baselineModelHomeProbability = 0.583754,
-            contextHomeProbability = 0.660238,
+            baselineModelHomeProbability = 0.583818,
+            contextHomeProbability = 0.660221,
         ),
         Tip(
             id = 38655,
@@ -91,8 +91,8 @@ object PredictionSnapshot {
             reason = "28 of 28 tracked models favour Brisbane Lions. Brisbane Lions also rates higher on results-based team strength. Brisbane Lions has the stronger recent five-game record.",
             modelCount = 28,
             kickoffEpochMillis = 1784369400000L,
-            baselineModelHomeProbability = 0.178754,
-            contextHomeProbability = -0.40649,
+            baselineModelHomeProbability = 0.178539,
+            contextHomeProbability = -0.40573,
         ),
         Tip(
             id = 38652,
@@ -119,8 +119,8 @@ object PredictionSnapshot {
             reason = "7 of 28 tracked models favour Western Bulldogs. Western Bulldogs also rates higher on results-based team strength. Western Bulldogs has the stronger recent five-game record.",
             modelCount = 28,
             kickoffEpochMillis = 1784438100000L,
-            baselineModelHomeProbability = 0.546743,
-            contextHomeProbability = -0.037425,
+            baselineModelHomeProbability = 0.546568,
+            contextHomeProbability = -0.037378,
         ),
         Tip(
             id = 38648,
@@ -133,8 +133,8 @@ object PredictionSnapshot {
             reason = "28 of 28 tracked models favour Greater Western Sydney. Greater Western Sydney also rates higher on results-based team strength. Greater Western Sydney has the stronger recent five-game record.",
             modelCount = 28,
             kickoffEpochMillis = 1784443200000L,
-            baselineModelHomeProbability = 0.197879,
-            contextHomeProbability = -0.316591,
+            baselineModelHomeProbability = 0.197721,
+            contextHomeProbability = -0.316548,
         ),
     )
 }
