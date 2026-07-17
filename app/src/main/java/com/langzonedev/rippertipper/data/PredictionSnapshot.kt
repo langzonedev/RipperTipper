@@ -7,7 +7,7 @@ object PredictionSnapshot {
     const val roundName = "Round 19"
     const val roundDates = "18–19 July 2026 · Adelaide time"
     const val status = "31 models + injury/form context"
-    const val updatedLabel = "Updated 17 July, 11:30 pm"
+    const val updatedLabel = "Updated 18 July, 5:00 am"
 
     val tips = listOf(
         Tip(
@@ -35,8 +35,8 @@ object PredictionSnapshot {
             reason = "30 of 31 tracked models favour Melbourne. Melbourne also rates higher on results-based team strength. Melbourne's recent scoring margins are materially stronger.",
             modelCount = 31,
             kickoffEpochMillis = 1784355300000L,
-            baselineModelHomeProbability = 0.313619,
-            contextHomeProbability = -0.113381,
+            baselineModelHomeProbability = 0.313677,
+            contextHomeProbability = -0.113397,
         ),
         Tip(
             id = 38647,
@@ -49,8 +49,8 @@ object PredictionSnapshot {
             reason = "30 of 31 tracked models favour Collingwood. Collingwood also rates higher on results-based team strength. Squiggle power rankings also lean toward Collingwood.",
             modelCount = 31,
             kickoffEpochMillis = 1784367300000L,
-            baselineModelHomeProbability = 0.594074,
-            contextHomeProbability = 0.681969,
+            baselineModelHomeProbability = 0.594219,
+            contextHomeProbability = 0.681929,
         ),
         Tip(
             id = 38655,
@@ -63,8 +63,8 @@ object PredictionSnapshot {
             reason = "31 of 31 tracked models favour Brisbane Lions. Brisbane Lions also rates higher on results-based team strength. Brisbane Lions has the stronger recent five-game record.",
             modelCount = 31,
             kickoffEpochMillis = 1784369400000L,
-            baselineModelHomeProbability = 0.159877,
-            contextHomeProbability = -0.339565,
+            baselineModelHomeProbability = 0.159832,
+            contextHomeProbability = -0.339405,
         ),
         Tip(
             id = 38652,
