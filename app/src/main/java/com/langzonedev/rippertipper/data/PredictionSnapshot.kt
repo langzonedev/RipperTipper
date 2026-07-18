@@ -7,23 +7,9 @@ object PredictionSnapshot {
     const val roundName = "Round 19"
     const val roundDates = "18–19 July 2026 · Adelaide time"
     const val status = "31 models + injury/form context"
-    const val updatedLabel = "Updated 18 July, 5:00 am"
+    const val updatedLabel = "Updated 18 July, 12:58 pm"
 
     val tips = listOf(
-        Tip(
-            id = 38654,
-            awayTeam = "Fremantle",
-            homeTeam = "Port Adelaide",
-            recommendedTeam = "Fremantle",
-            confidencePercent = 92,
-            startTime = "Sat 12:45 pm",
-            venue = "Adelaide Oval",
-            reason = "31 of 31 tracked models favour Fremantle. Fremantle also rates higher on results-based team strength. Fremantle has the stronger recent five-game record.",
-            modelCount = 31,
-            kickoffEpochMillis = 1784344500000L,
-            baselineModelHomeProbability = 0.257913,
-            contextHomeProbability = -0.528339,
-        ),
         Tip(
             id = 38651,
             awayTeam = "Melbourne",
@@ -35,8 +21,8 @@ object PredictionSnapshot {
             reason = "30 of 31 tracked models favour Melbourne. Melbourne also rates higher on results-based team strength. Melbourne's recent scoring margins are materially stronger.",
             modelCount = 31,
             kickoffEpochMillis = 1784355300000L,
-            baselineModelHomeProbability = 0.313677,
-            contextHomeProbability = -0.113397,
+            baselineModelHomeProbability = 0.3137,
+            contextHomeProbability = -0.113403,
         ),
         Tip(
             id = 38647,
@@ -49,8 +35,8 @@ object PredictionSnapshot {
             reason = "30 of 31 tracked models favour Collingwood. Collingwood also rates higher on results-based team strength. Squiggle power rankings also lean toward Collingwood.",
             modelCount = 31,
             kickoffEpochMillis = 1784367300000L,
-            baselineModelHomeProbability = 0.594219,
-            contextHomeProbability = 0.681929,
+            baselineModelHomeProbability = 0.593974,
+            contextHomeProbability = 0.681996,
         ),
         Tip(
             id = 38655,
@@ -63,8 +49,8 @@ object PredictionSnapshot {
             reason = "31 of 31 tracked models favour Brisbane Lions. Brisbane Lions also rates higher on results-based team strength. Brisbane Lions has the stronger recent five-game record.",
             modelCount = 31,
             kickoffEpochMillis = 1784369400000L,
-            baselineModelHomeProbability = 0.159832,
-            contextHomeProbability = -0.339405,
+            baselineModelHomeProbability = 0.160165,
+            contextHomeProbability = -0.340583,
         ),
         Tip(
             id = 38652,
@@ -77,22 +63,22 @@ object PredictionSnapshot {
             reason = "31 of 31 tracked models favour Hawthorn. Hawthorn also rates higher on results-based team strength. Hawthorn has the stronger recent five-game record.",
             modelCount = 31,
             kickoffEpochMillis = 1784430600000L,
-            baselineModelHomeProbability = 0.096213,
-            contextHomeProbability = -0.113846,
+            baselineModelHomeProbability = 0.096074,
+            contextHomeProbability = -0.113354,
         ),
         Tip(
             id = 38650,
             awayTeam = "Western Bulldogs",
             homeTeam = "Gold Coast",
             recommendedTeam = "Western Bulldogs",
-            confidencePercent = 56,
+            confidencePercent = 57,
             startTime = "Sun 2:45 pm",
             venue = "People First Stadium",
-            reason = "8 of 31 tracked models favour Western Bulldogs. Upset-risk flags are active, so confidence has been trimmed. Western Bulldogs also rates higher on results-based team strength.",
+            reason = "8 of 31 tracked models favour Western Bulldogs. Western Bulldogs also rates higher on results-based team strength. Western Bulldogs has the stronger recent five-game record.",
             modelCount = 31,
             kickoffEpochMillis = 1784438100000L,
-            baselineModelHomeProbability = 0.541939,
-            contextHomeProbability = 0.093769,
+            baselineModelHomeProbability = 0.541981,
+            contextHomeProbability = 0.048303,
         ),
         Tip(
             id = 38648,
