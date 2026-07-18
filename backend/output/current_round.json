@@ -2,8 +2,8 @@
   "round_name": "Round 19",
   "round_dates": "19\u201319 July 2026 \u00b7 Adelaide time",
   "status": "31 models + injury/form context",
-  "updated_at": "2026-07-18T13:45:17.005279+00:00",
-  "updated_label": "Updated 18 July, 11:15 pm",
+  "updated_at": "2026-07-18T19:22:09.320273+00:00",
+  "updated_label": "Updated 19 July, 4:52 am",
   "sources": [
     "Squiggle",
     "Open-Meteo",
@@ -22,10 +22,10 @@
       "context_reason": "Hawthorn also rates higher on results-based team strength. Hawthorn has the stronger recent five-game record.",
       "model_count": 31,
       "kickoff_epoch_millis": 1784430600000,
-      "baseline_model_home_probability": 0.096074,
-      "context_home_probability": -0.113354,
+      "baseline_model_home_probability": 0.09551,
+      "context_home_probability": -0.111352,
       "metrics": {
-        "model_home_probability": 0.0961,
+        "model_home_probability": 0.0955,
         "elo_home_probability": 0.0408,
         "final_home_probability": 0.05,
         "power_home": 228.07,
@@ -48,8 +48,8 @@
         "away_travel_km": 3,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 13.0,
-          "temperature_max": 16.8
+          "wind_max": 12.3,
+          "temperature_max": 16.2
         }
       }
     },
@@ -65,12 +65,12 @@
       "context_reason": "Western Bulldogs also rates higher on results-based team strength. Western Bulldogs has the stronger recent five-game record.",
       "model_count": 31,
       "kickoff_epoch_millis": 1784438100000,
-      "baseline_model_home_probability": 0.543642,
-      "context_home_probability": 0.04785,
+      "baseline_model_home_probability": 0.543087,
+      "context_home_probability": 0.048001,
       "metrics": {
-        "model_home_probability": 0.5436,
+        "model_home_probability": 0.5431,
         "elo_home_probability": 0.3699,
-        "final_home_probability": 0.4346,
+        "final_home_probability": 0.4342,
         "power_home": 295.0,
         "power_away": 306.05,
         "power_adjustment": -0.0332,
@@ -90,9 +90,9 @@
         "away_rest_days": 7,
         "away_travel_km": 1343,
         "weather": {
-          "rain_probability": 99,
-          "wind_max": 31.6,
-          "temperature_max": 19.3
+          "rain_probability": 98,
+          "wind_max": 31.9,
+          "temperature_max": 20.5
         }
       }
     },
@@ -108,12 +108,12 @@
       "context_reason": "Greater Western Sydney also rates higher on results-based team strength. Greater Western Sydney has the stronger recent five-game record.",
       "model_count": 31,
       "kickoff_epoch_millis": 1784443200000,
-      "baseline_model_home_probability": 0.190626,
-      "context_home_probability": -0.314613,
+      "baseline_model_home_probability": 0.188161,
+      "context_home_probability": -0.313941,
       "metrics": {
-        "model_home_probability": 0.1906,
+        "model_home_probability": 0.1882,
         "elo_home_probability": 0.0676,
-        "final_home_probability": 0.0795,
+        "final_home_probability": 0.0777,
         "power_home": 233.44,
         "power_away": 315.52,
         "power_adjustment": -0.04,
@@ -134,8 +134,8 @@
         "away_travel_km": 707,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 13.1,
-          "temperature_max": 16.4
+          "wind_max": 11.8,
+          "temperature_max": 16.0
         }
       }
     }

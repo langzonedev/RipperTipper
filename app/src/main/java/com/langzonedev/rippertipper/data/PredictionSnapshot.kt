@@ -7,7 +7,7 @@ object PredictionSnapshot {
     const val roundName = "Round 19"
     const val roundDates = "19–19 July 2026 · Adelaide time"
     const val status = "31 models + injury/form context"
-    const val updatedLabel = "Updated 18 July, 11:15 pm"
+    const val updatedLabel = "Updated 19 July, 4:52 am"
 
     val tips = listOf(
         Tip(
@@ -21,8 +21,8 @@ object PredictionSnapshot {
             reason = "31 of 31 tracked models favour Hawthorn. Hawthorn also rates higher on results-based team strength. Hawthorn has the stronger recent five-game record.",
             modelCount = 31,
             kickoffEpochMillis = 1784430600000L,
-            baselineModelHomeProbability = 0.096074,
-            contextHomeProbability = -0.113354,
+            baselineModelHomeProbability = 0.09551,
+            contextHomeProbability = -0.111352,
         ),
         Tip(
             id = 38650,
@@ -35,8 +35,8 @@ object PredictionSnapshot {
             reason = "8 of 31 tracked models favour Western Bulldogs. Western Bulldogs also rates higher on results-based team strength. Western Bulldogs has the stronger recent five-game record.",
             modelCount = 31,
             kickoffEpochMillis = 1784438100000L,
-            baselineModelHomeProbability = 0.543642,
-            contextHomeProbability = 0.04785,
+            baselineModelHomeProbability = 0.543087,
+            contextHomeProbability = 0.048001,
         ),
         Tip(
             id = 38648,
@@ -49,8 +49,8 @@ object PredictionSnapshot {
             reason = "31 of 31 tracked models favour Greater Western Sydney. Greater Western Sydney also rates higher on results-based team strength. Greater Western Sydney has the stronger recent five-game record.",
             modelCount = 31,
             kickoffEpochMillis = 1784443200000L,
-            baselineModelHomeProbability = 0.190626,
-            contextHomeProbability = -0.314613,
+            baselineModelHomeProbability = 0.188161,
+            contextHomeProbability = -0.313941,
         ),
     )
 }
