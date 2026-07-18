@@ -7,23 +7,9 @@ object PredictionSnapshot {
     const val roundName = "Round 19"
     const val roundDates = "18–19 July 2026 · Adelaide time"
     const val status = "31 models + injury/form context"
-    const val updatedLabel = "Updated 18 July, 12:58 pm"
+    const val updatedLabel = "Updated 18 July, 5:36 pm"
 
     val tips = listOf(
-        Tip(
-            id = 38651,
-            awayTeam = "Melbourne",
-            homeTeam = "North Melbourne",
-            recommendedTeam = "Melbourne",
-            confidencePercent = 78,
-            startTime = "Sat 3:45 pm",
-            venue = "Marvel Stadium",
-            reason = "30 of 31 tracked models favour Melbourne. Melbourne also rates higher on results-based team strength. Melbourne's recent scoring margins are materially stronger.",
-            modelCount = 31,
-            kickoffEpochMillis = 1784355300000L,
-            baselineModelHomeProbability = 0.3137,
-            contextHomeProbability = -0.113403,
-        ),
         Tip(
             id = 38647,
             awayTeam = "Carlton",
@@ -49,8 +35,8 @@ object PredictionSnapshot {
             reason = "31 of 31 tracked models favour Brisbane Lions. Brisbane Lions also rates higher on results-based team strength. Brisbane Lions has the stronger recent five-game record.",
             modelCount = 31,
             kickoffEpochMillis = 1784369400000L,
-            baselineModelHomeProbability = 0.160165,
-            contextHomeProbability = -0.340583,
+            baselineModelHomeProbability = 0.160381,
+            contextHomeProbability = -0.34135,
         ),
         Tip(
             id = 38652,
@@ -77,8 +63,8 @@ object PredictionSnapshot {
             reason = "8 of 31 tracked models favour Western Bulldogs. Western Bulldogs also rates higher on results-based team strength. Western Bulldogs has the stronger recent five-game record.",
             modelCount = 31,
             kickoffEpochMillis = 1784438100000L,
-            baselineModelHomeProbability = 0.541981,
-            contextHomeProbability = 0.048303,
+            baselineModelHomeProbability = 0.543365,
+            contextHomeProbability = 0.047925,
         ),
         Tip(
             id = 38648,

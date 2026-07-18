@@ -2,57 +2,14 @@
   "round_name": "Round 19",
   "round_dates": "18\u201319 July 2026 \u00b7 Adelaide time",
   "status": "31 models + injury/form context",
-  "updated_at": "2026-07-18T03:28:35.250252+00:00",
-  "updated_label": "Updated 18 July, 12:58 pm",
+  "updated_at": "2026-07-18T08:06:23.949705+00:00",
+  "updated_label": "Updated 18 July, 5:36 pm",
   "sources": [
     "Squiggle",
     "Open-Meteo",
     "AFL injury list"
   ],
   "tips": [
-    {
-      "id": 38651,
-      "away_team": "Melbourne",
-      "home_team": "North Melbourne",
-      "recommended_team": "Melbourne",
-      "confidence_percent": 78,
-      "start_time": "Sat 3:45 pm",
-      "venue": "Marvel Stadium",
-      "reason": "30 of 31 tracked models favour Melbourne. Melbourne also rates higher on results-based team strength. Melbourne's recent scoring margins are materially stronger.",
-      "context_reason": "Melbourne also rates higher on results-based team strength. Melbourne's recent scoring margins are materially stronger.",
-      "model_count": 31,
-      "kickoff_epoch_millis": 1784355300000,
-      "baseline_model_home_probability": 0.3137,
-      "context_home_probability": -0.113403,
-      "metrics": {
-        "model_home_probability": 0.3137,
-        "elo_home_probability": 0.2555,
-        "final_home_probability": 0.2197,
-        "power_home": 270.22,
-        "power_away": 310.95,
-        "power_adjustment": -0.04,
-        "margin_adjustment": -0.0245,
-        "venue_adjustment": 0.0063,
-        "availability_adjustment": -0.005,
-        "upset_risk_drag": 0.0,
-        "home_availability_burden": 6.0,
-        "away_availability_burden": 6.55,
-        "home_elo": 1314.0,
-        "away_elo": 1544.7,
-        "home_recent_wins": 3,
-        "away_recent_wins": 4,
-        "home_recent_margin": 3.0,
-        "away_recent_margin": 23.4,
-        "home_rest_days": 7,
-        "away_rest_days": 6,
-        "away_travel_km": 0,
-        "weather": {
-          "rain_probability": 0,
-          "wind_max": 8.6,
-          "temperature_max": 14.2
-        }
-      }
-    },
     {
       "id": 38647,
       "away_team": "Carlton",
@@ -91,8 +48,8 @@
         "away_travel_km": 4,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 10.1,
-          "temperature_max": 13.7
+          "wind_max": 11.2,
+          "temperature_max": 14.5
         }
       }
     },
@@ -108,10 +65,10 @@
       "context_reason": "Brisbane Lions also rates higher on results-based team strength. Brisbane Lions has the stronger recent five-game record.",
       "model_count": 31,
       "kickoff_epoch_millis": 1784369400000,
-      "baseline_model_home_probability": 0.160165,
-      "context_home_probability": -0.340583,
+      "baseline_model_home_probability": 0.160381,
+      "context_home_probability": -0.34135,
       "metrics": {
-        "model_home_probability": 0.1602,
+        "model_home_probability": 0.1604,
         "elo_home_probability": 0.0296,
         "final_home_probability": 0.05,
         "power_home": 241.68,
@@ -134,8 +91,8 @@
         "away_travel_km": 3604,
         "weather": {
           "rain_probability": 100,
-          "wind_max": 17.9,
-          "temperature_max": 17.6
+          "wind_max": 18.5,
+          "temperature_max": 17.7
         }
       }
     },
@@ -177,7 +134,7 @@
         "away_travel_km": 3,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 14.0,
+          "wind_max": 13.7,
           "temperature_max": 16.8
         }
       }
@@ -194,12 +151,12 @@
       "context_reason": "Western Bulldogs also rates higher on results-based team strength. Western Bulldogs has the stronger recent five-game record.",
       "model_count": 31,
       "kickoff_epoch_millis": 1784438100000,
-      "baseline_model_home_probability": 0.541981,
-      "context_home_probability": 0.048303,
+      "baseline_model_home_probability": 0.543365,
+      "context_home_probability": 0.047925,
       "metrics": {
-        "model_home_probability": 0.542,
+        "model_home_probability": 0.5434,
         "elo_home_probability": 0.3699,
-        "final_home_probability": 0.4334,
+        "final_home_probability": 0.4344,
         "power_home": 295.0,
         "power_away": 306.05,
         "power_adjustment": -0.0332,
@@ -220,8 +177,8 @@
         "away_travel_km": 1343,
         "weather": {
           "rain_probability": 98,
-          "wind_max": 30.7,
-          "temperature_max": 19.0
+          "wind_max": 30.9,
+          "temperature_max": 18.7
         }
       }
     },
@@ -263,7 +220,7 @@
         "away_travel_km": 707,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 13.6,
+          "wind_max": 13.2,
           "temperature_max": 16.3
         }
       }
