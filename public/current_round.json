@@ -1,101 +1,15 @@
 {
   "round_name": "Round 19",
-  "round_dates": "18\u201319 July 2026 \u00b7 Adelaide time",
+  "round_dates": "19\u201319 July 2026 \u00b7 Adelaide time",
   "status": "31 models + injury/form context",
-  "updated_at": "2026-07-18T08:06:23.949705+00:00",
-  "updated_label": "Updated 18 July, 5:36 pm",
+  "updated_at": "2026-07-18T13:45:17.005279+00:00",
+  "updated_label": "Updated 18 July, 11:15 pm",
   "sources": [
     "Squiggle",
     "Open-Meteo",
     "AFL injury list"
   ],
   "tips": [
-    {
-      "id": 38647,
-      "away_team": "Carlton",
-      "home_team": "Collingwood",
-      "recommended_team": "Collingwood",
-      "confidence_percent": 61,
-      "start_time": "Sat 7:05 pm",
-      "venue": "MCG",
-      "reason": "30 of 31 tracked models favour Collingwood. Collingwood also rates higher on results-based team strength. Squiggle power rankings also lean toward Collingwood.",
-      "context_reason": "Collingwood also rates higher on results-based team strength. Squiggle power rankings also lean toward Collingwood.",
-      "model_count": 31,
-      "kickoff_epoch_millis": 1784367300000,
-      "baseline_model_home_probability": 0.593974,
-      "context_home_probability": 0.681996,
-      "metrics": {
-        "model_home_probability": 0.594,
-        "elo_home_probability": 0.73,
-        "final_home_probability": 0.6133,
-        "power_home": 314.43,
-        "power_away": 295.96,
-        "power_adjustment": 0.04,
-        "margin_adjustment": 0.0106,
-        "venue_adjustment": 0.0031,
-        "availability_adjustment": -0.002,
-        "upset_risk_drag": 0.012,
-        "home_availability_burden": 7.7,
-        "away_availability_burden": 7.2,
-        "home_elo": 1592.4,
-        "away_elo": 1464.6,
-        "home_recent_wins": 4,
-        "away_recent_wins": 4,
-        "home_recent_margin": 12.6,
-        "away_recent_margin": 3.8,
-        "home_rest_days": 7,
-        "away_rest_days": 7,
-        "away_travel_km": 4,
-        "weather": {
-          "rain_probability": 0,
-          "wind_max": 11.2,
-          "temperature_max": 14.5
-        }
-      }
-    },
-    {
-      "id": 38655,
-      "away_team": "Brisbane Lions",
-      "home_team": "West Coast",
-      "recommended_team": "Brisbane Lions",
-      "confidence_percent": 95,
-      "start_time": "Sat 7:40 pm",
-      "venue": "Optus Stadium",
-      "reason": "31 of 31 tracked models favour Brisbane Lions. Brisbane Lions also rates higher on results-based team strength. Brisbane Lions has the stronger recent five-game record.",
-      "context_reason": "Brisbane Lions also rates higher on results-based team strength. Brisbane Lions has the stronger recent five-game record.",
-      "model_count": 31,
-      "kickoff_epoch_millis": 1784369400000,
-      "baseline_model_home_probability": 0.160381,
-      "context_home_probability": -0.34135,
-      "metrics": {
-        "model_home_probability": 0.1604,
-        "elo_home_probability": 0.0296,
-        "final_home_probability": 0.05,
-        "power_home": 241.68,
-        "power_away": 337.91,
-        "power_adjustment": -0.04,
-        "margin_adjustment": -0.035,
-        "venue_adjustment": -0.0063,
-        "availability_adjustment": -0.04,
-        "upset_risk_drag": 0.012,
-        "home_availability_burden": 11.75,
-        "away_availability_burden": 2.25,
-        "home_elo": 1112.9,
-        "away_elo": 1764.2,
-        "home_recent_wins": 0,
-        "away_recent_wins": 5,
-        "home_recent_margin": -20.2,
-        "away_recent_margin": 44.2,
-        "home_rest_days": 6,
-        "away_rest_days": 6,
-        "away_travel_km": 3604,
-        "weather": {
-          "rain_probability": 100,
-          "wind_max": 18.5,
-          "temperature_max": 17.7
-        }
-      }
-    },
     {
       "id": 38652,
       "away_team": "Hawthorn",
@@ -134,7 +48,7 @@
         "away_travel_km": 3,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 13.7,
+          "wind_max": 13.0,
           "temperature_max": 16.8
         }
       }
@@ -151,12 +65,12 @@
       "context_reason": "Western Bulldogs also rates higher on results-based team strength. Western Bulldogs has the stronger recent five-game record.",
       "model_count": 31,
       "kickoff_epoch_millis": 1784438100000,
-      "baseline_model_home_probability": 0.543365,
-      "context_home_probability": 0.047925,
+      "baseline_model_home_probability": 0.543642,
+      "context_home_probability": 0.04785,
       "metrics": {
-        "model_home_probability": 0.5434,
+        "model_home_probability": 0.5436,
         "elo_home_probability": 0.3699,
-        "final_home_probability": 0.4344,
+        "final_home_probability": 0.4346,
         "power_home": 295.0,
         "power_away": 306.05,
         "power_adjustment": -0.0332,
@@ -176,9 +90,9 @@
         "away_rest_days": 7,
         "away_travel_km": 1343,
         "weather": {
-          "rain_probability": 98,
-          "wind_max": 30.9,
-          "temperature_max": 18.7
+          "rain_probability": 99,
+          "wind_max": 31.6,
+          "temperature_max": 19.3
         }
       }
     },
@@ -194,12 +108,12 @@
       "context_reason": "Greater Western Sydney also rates higher on results-based team strength. Greater Western Sydney has the stronger recent five-game record.",
       "model_count": 31,
       "kickoff_epoch_millis": 1784443200000,
-      "baseline_model_home_probability": 0.190503,
-      "context_home_probability": -0.31458,
+      "baseline_model_home_probability": 0.190626,
+      "context_home_probability": -0.314613,
       "metrics": {
-        "model_home_probability": 0.1905,
+        "model_home_probability": 0.1906,
         "elo_home_probability": 0.0676,
-        "final_home_probability": 0.0794,
+        "final_home_probability": 0.0795,
         "power_home": 233.44,
         "power_away": 315.52,
         "power_adjustment": -0.04,
@@ -220,8 +134,8 @@
         "away_travel_km": 707,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 13.2,
-          "temperature_max": 16.3
+          "wind_max": 13.1,
+          "temperature_max": 16.4
         }
       }
     }
