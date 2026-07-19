@@ -7,36 +7,22 @@ object PredictionSnapshot {
     const val roundName = "Round 19"
     const val roundDates = "19–19 July 2026 · Adelaide time"
     const val status = "31 models + injury/form context"
-    const val updatedLabel = "Updated 19 July, 4:52 am"
+    const val updatedLabel = "Updated 19 July, 1:20 pm"
 
     val tips = listOf(
-        Tip(
-            id = 38652,
-            awayTeam = "Hawthorn",
-            homeTeam = "Richmond",
-            recommendedTeam = "Hawthorn",
-            confidencePercent = 95,
-            startTime = "Sun 12:40 pm",
-            venue = "MCG",
-            reason = "31 of 31 tracked models favour Hawthorn. Hawthorn also rates higher on results-based team strength. Hawthorn has the stronger recent five-game record.",
-            modelCount = 31,
-            kickoffEpochMillis = 1784430600000L,
-            baselineModelHomeProbability = 0.09551,
-            contextHomeProbability = -0.111352,
-        ),
         Tip(
             id = 38650,
             awayTeam = "Western Bulldogs",
             homeTeam = "Gold Coast",
             recommendedTeam = "Western Bulldogs",
-            confidencePercent = 57,
+            confidencePercent = 56,
             startTime = "Sun 2:45 pm",
             venue = "People First Stadium",
-            reason = "8 of 31 tracked models favour Western Bulldogs. Western Bulldogs also rates higher on results-based team strength. Western Bulldogs has the stronger recent five-game record.",
+            reason = "8 of 31 tracked models favour Western Bulldogs. Upset-risk flags are active, so confidence has been trimmed. Western Bulldogs also rates higher on results-based team strength.",
             modelCount = 31,
             kickoffEpochMillis = 1784438100000L,
-            baselineModelHomeProbability = 0.543087,
-            contextHomeProbability = 0.048001,
+            baselineModelHomeProbability = 0.543919,
+            contextHomeProbability = 0.093228,
         ),
         Tip(
             id = 38648,
@@ -49,8 +35,8 @@ object PredictionSnapshot {
             reason = "31 of 31 tracked models favour Greater Western Sydney. Greater Western Sydney also rates higher on results-based team strength. Greater Western Sydney has the stronger recent five-game record.",
             modelCount = 31,
             kickoffEpochMillis = 1784443200000L,
-            baselineModelHomeProbability = 0.188161,
-            contextHomeProbability = -0.313941,
+            baselineModelHomeProbability = 0.188261,
+            contextHomeProbability = -0.313968,
         ),
     )
 }
