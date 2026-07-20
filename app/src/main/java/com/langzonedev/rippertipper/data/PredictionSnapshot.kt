@@ -7,7 +7,7 @@ object PredictionSnapshot {
     const val roundName = "Round 20"
     const val roundDates = "23–26 July 2026 · Adelaide time"
     const val status = "27 models + injury/form context"
-    const val updatedLabel = "Updated 21 July, 12:01 am"
+    const val updatedLabel = "Updated 21 July, 5:24 am"
 
     val tips = listOf(
         Tip(
@@ -77,8 +77,8 @@ object PredictionSnapshot {
             reason = "26 of 26 tracked models favour Hawthorn. Hawthorn also rates higher on results-based team strength. Hawthorn has the stronger recent five-game record.",
             modelCount = 26,
             kickoffEpochMillis = 1784960100000L,
-            baselineModelHomeProbability = 0.903681,
-            contextHomeProbability = 0.915301,
+            baselineModelHomeProbability = 0.903708,
+            contextHomeProbability = 0.915294,
         ),
         Tip(
             id = 38658,
