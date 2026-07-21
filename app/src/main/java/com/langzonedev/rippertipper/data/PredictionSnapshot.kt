@@ -7,7 +7,7 @@ object PredictionSnapshot {
     const val roundName = "Round 20"
     const val roundDates = "23–26 July 2026 · Adelaide time"
     const val status = "28 models + injury/form context"
-    const val updatedLabel = "Updated 21 July, 6:12 pm"
+    const val updatedLabel = "Updated 21 July, 11:48 pm"
 
     val tips = listOf(
         Tip(
@@ -21,8 +21,8 @@ object PredictionSnapshot {
             reason = "27 of 28 tracked models favour Adelaide. Adelaide also rates higher on results-based team strength. Squiggle power rankings also lean toward Adelaide.",
             modelCount = 28,
             kickoffEpochMillis = 1784799000000L,
-            baselineModelHomeProbability = 0.670261,
-            contextHomeProbability = 0.63995,
+            baselineModelHomeProbability = 0.670471,
+            contextHomeProbability = 0.639892,
         ),
         Tip(
             id = 38661,
@@ -35,8 +35,8 @@ object PredictionSnapshot {
             reason = "23 of 27 tracked models favour Geelong. Geelong also rates higher on results-based team strength. Recent form runs against the pick, so confidence is restrained.",
             modelCount = 27,
             kickoffEpochMillis = 1784886000000L,
-            baselineModelHomeProbability = 0.432015,
-            contextHomeProbability = 0.266711,
+            baselineModelHomeProbability = 0.432096,
+            contextHomeProbability = 0.266689,
         ),
         Tip(
             id = 38664,
@@ -49,8 +49,8 @@ object PredictionSnapshot {
             reason = "27 of 27 tracked models favour Fremantle. Fremantle also rates higher on results-based team strength. Fremantle has the stronger recent five-game record.",
             modelCount = 27,
             kickoffEpochMillis = 1784887800000L,
-            baselineModelHomeProbability = 0.906089,
-            contextHomeProbability = 1.105685,
+            baselineModelHomeProbability = 0.906104,
+            contextHomeProbability = 1.105632,
         ),
         Tip(
             id = 38657,
@@ -63,8 +63,8 @@ object PredictionSnapshot {
             reason = "25 of 27 tracked models favour Carlton. Carlton has the stronger recent five-game record. Carlton's recent scoring margins are materially stronger.",
             modelCount = 27,
             kickoffEpochMillis = 1784948700000L,
-            baselineModelHomeProbability = 0.592122,
-            contextHomeProbability = 0.355708,
+            baselineModelHomeProbability = 0.592222,
+            contextHomeProbability = 0.355578,
         ),
         Tip(
             id = 38659,
@@ -77,8 +77,8 @@ object PredictionSnapshot {
             reason = "27 of 27 tracked models favour Hawthorn. Hawthorn also rates higher on results-based team strength. Hawthorn has the stronger recent five-game record.",
             modelCount = 27,
             kickoffEpochMillis = 1784960100000L,
-            baselineModelHomeProbability = 0.905493,
-            contextHomeProbability = 0.979353,
+            baselineModelHomeProbability = 0.90553,
+            contextHomeProbability = 0.979343,
         ),
         Tip(
             id = 38658,
@@ -91,8 +91,8 @@ object PredictionSnapshot {
             reason = "23 of 27 tracked models favour Sydney. Sydney also rates higher on results-based team strength. Sydney has the cleaner current availability profile.",
             modelCount = 27,
             kickoffEpochMillis = 1784961300000L,
-            baselineModelHomeProbability = 0.435737,
-            contextHomeProbability = 0.099467,
+            baselineModelHomeProbability = 0.434956,
+            contextHomeProbability = 0.09968,
         ),
         Tip(
             id = 38662,
@@ -105,8 +105,8 @@ object PredictionSnapshot {
             reason = "27 of 27 tracked models favour Western Bulldogs. Western Bulldogs also rates higher on results-based team strength. Western Bulldogs has the stronger recent five-game record.",
             modelCount = 27,
             kickoffEpochMillis = 1784972400000L,
-            baselineModelHomeProbability = 0.84997,
-            contextHomeProbability = 1.051594,
+            baselineModelHomeProbability = 0.850041,
+            contextHomeProbability = 1.051575,
         ),
         Tip(
             id = 38656,
@@ -119,8 +119,8 @@ object PredictionSnapshot {
             reason = "27 of 27 tracked models favour Brisbane Lions. Brisbane Lions also rates higher on results-based team strength. Brisbane Lions has the stronger recent five-game record.",
             modelCount = 27,
             kickoffEpochMillis = 1785035400000L,
-            baselineModelHomeProbability = 0.8085,
-            contextHomeProbability = 1.113596,
+            baselineModelHomeProbability = 0.808919,
+            contextHomeProbability = 1.113482,
         ),
         Tip(
             id = 38660,
@@ -133,8 +133,8 @@ object PredictionSnapshot {
             reason = "27 of 27 tracked models favour St Kilda. St Kilda also rates higher on results-based team strength. Squiggle power rankings also lean toward St Kilda.",
             modelCount = 27,
             kickoffEpochMillis = 1785042900000L,
-            baselineModelHomeProbability = 0.345296,
-            contextHomeProbability = -0.084178,
+            baselineModelHomeProbability = 0.344963,
+            contextHomeProbability = -0.084087,
         ),
     )
 }
