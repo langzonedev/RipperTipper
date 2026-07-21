@@ -7,7 +7,7 @@ object PredictionSnapshot {
     const val roundName = "Round 20"
     const val roundDates = "23–26 July 2026 · Adelaide time"
     const val status = "28 models + injury/form context"
-    const val updatedLabel = "Updated 21 July, 11:48 pm"
+    const val updatedLabel = "Updated 22 July, 5:19 am"
 
     val tips = listOf(
         Tip(
@@ -15,14 +15,14 @@ object PredictionSnapshot {
             awayTeam = "Collingwood",
             homeTeam = "Adelaide",
             recommendedTeam = "Adelaide",
-            confidencePercent = 66,
+            confidencePercent = 65,
             startTime = "Thu 7:00 pm",
             venue = "Adelaide Oval",
             reason = "27 of 28 tracked models favour Adelaide. Adelaide also rates higher on results-based team strength. Squiggle power rankings also lean toward Adelaide.",
             modelCount = 28,
             kickoffEpochMillis = 1784799000000L,
             baselineModelHomeProbability = 0.670471,
-            contextHomeProbability = 0.639892,
+            contextHomeProbability = 0.585347,
         ),
         Tip(
             id = 38661,
@@ -57,28 +57,28 @@ object PredictionSnapshot {
             awayTeam = "Gold Coast",
             homeTeam = "Carlton",
             recommendedTeam = "Carlton",
-            confidencePercent = 54,
+            confidencePercent = 55,
             startTime = "Sat 12:35 pm",
             venue = "Marvel Stadium",
             reason = "25 of 27 tracked models favour Carlton. Carlton has the stronger recent five-game record. Carlton's recent scoring margins are materially stronger.",
             modelCount = 27,
             kickoffEpochMillis = 1784948700000L,
             baselineModelHomeProbability = 0.592222,
-            contextHomeProbability = 0.355578,
+            contextHomeProbability = 0.410123,
         ),
         Tip(
             id = 38659,
             awayTeam = "Essendon",
             homeTeam = "Hawthorn",
             recommendedTeam = "Hawthorn",
-            confidencePercent = 92,
+            confidencePercent = 93,
             startTime = "Sat 3:45 pm",
             venue = "MCG",
             reason = "27 of 27 tracked models favour Hawthorn. Hawthorn also rates higher on results-based team strength. Hawthorn has the stronger recent five-game record.",
             modelCount = 27,
             kickoffEpochMillis = 1784960100000L,
             baselineModelHomeProbability = 0.90553,
-            contextHomeProbability = 0.979343,
+            contextHomeProbability = 1.033888,
         ),
         Tip(
             id = 38658,
@@ -99,14 +99,14 @@ object PredictionSnapshot {
             awayTeam = "Richmond",
             homeTeam = "Western Bulldogs",
             recommendedTeam = "Western Bulldogs",
-            confidencePercent = 89,
+            confidencePercent = 91,
             startTime = "Sat 7:10 pm",
             venue = "Marvel Stadium",
             reason = "27 of 27 tracked models favour Western Bulldogs. Western Bulldogs also rates higher on results-based team strength. Western Bulldogs has the stronger recent five-game record.",
             modelCount = 27,
             kickoffEpochMillis = 1784972400000L,
             baselineModelHomeProbability = 0.850041,
-            contextHomeProbability = 1.051575,
+            contextHomeProbability = 1.10612,
         ),
         Tip(
             id = 38656,

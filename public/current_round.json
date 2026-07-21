@@ -2,8 +2,8 @@
   "round_name": "Round 20",
   "round_dates": "23\u201326 July 2026 \u00b7 Adelaide time",
   "status": "28 models + injury/form context",
-  "updated_at": "2026-07-21T14:18:42.643706+00:00",
-  "updated_label": "Updated 21 July, 11:48 pm",
+  "updated_at": "2026-07-21T19:49:15.440016+00:00",
+  "updated_label": "Updated 22 July, 5:19 am",
   "sources": [
     "Squiggle",
     "Open-Meteo",
@@ -15,7 +15,7 @@
       "away_team": "Collingwood",
       "home_team": "Adelaide",
       "recommended_team": "Adelaide",
-      "confidence_percent": 66,
+      "confidence_percent": 65,
       "start_time": "Thu 7:00 pm",
       "venue": "Adelaide Oval",
       "reason": "27 of 28 tracked models favour Adelaide. Adelaide also rates higher on results-based team strength. Squiggle power rankings also lean toward Adelaide.",
@@ -23,18 +23,18 @@
       "model_count": 28,
       "kickoff_epoch_millis": 1784799000000,
       "baseline_model_home_probability": 0.670471,
-      "context_home_probability": 0.639892,
+      "context_home_probability": 0.585347,
       "metrics": {
         "model_home_probability": 0.6705,
         "elo_home_probability": 0.6883,
-        "final_home_probability": 0.6637,
+        "final_home_probability": 0.6517,
         "power_home": 425.43,
         "power_away": 411.37,
         "power_adjustment": 0.04,
         "margin_adjustment": 0.0046,
         "venue_adjustment": 0.0094,
         "availability_adjustment": -0.0046,
-        "upset_risk_drag": 0.012,
+        "upset_risk_drag": 0.024,
         "home_availability_burden": 4.25,
         "away_availability_burden": 6.1,
         "home_elo": 1703.0,
@@ -47,9 +47,9 @@
         "away_rest_days": 4,
         "away_travel_km": 654,
         "weather": {
-          "rain_probability": 29,
-          "wind_max": 18.3,
-          "temperature_max": 12.6
+          "rain_probability": 57,
+          "wind_max": 17.6,
+          "temperature_max": 12.4
         }
       }
     },
@@ -90,9 +90,9 @@
         "away_rest_days": 8,
         "away_travel_km": 67,
         "weather": {
-          "rain_probability": 3,
-          "wind_max": 19.6,
-          "temperature_max": 12.7
+          "rain_probability": 9,
+          "wind_max": 20.4,
+          "temperature_max": 13.0
         }
       }
     },
@@ -134,8 +134,8 @@
         "away_travel_km": 3,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 10.3,
-          "temperature_max": 16.8
+          "wind_max": 10.1,
+          "temperature_max": 16.9
         }
       }
     },
@@ -144,7 +144,7 @@
       "away_team": "Gold Coast",
       "home_team": "Carlton",
       "recommended_team": "Carlton",
-      "confidence_percent": 54,
+      "confidence_percent": 55,
       "start_time": "Sat 12:35 pm",
       "venue": "Marvel Stadium",
       "reason": "25 of 27 tracked models favour Carlton. Carlton has the stronger recent five-game record. Carlton's recent scoring margins are materially stronger.",
@@ -152,18 +152,18 @@
       "model_count": 27,
       "kickoff_epoch_millis": 1784948700000,
       "baseline_model_home_probability": 0.592222,
-      "context_home_probability": 0.355578,
+      "context_home_probability": 0.410123,
       "metrics": {
         "model_home_probability": 0.5922,
         "elo_home_probability": 0.5773,
-        "final_home_probability": 0.5402,
+        "final_home_probability": 0.5522,
         "power_home": 388.59,
         "power_away": 387.39,
         "power_adjustment": 0.0036,
         "margin_adjustment": 0.035,
         "venue_adjustment": -0.0031,
         "availability_adjustment": -0.0192,
-        "upset_risk_drag": 0.024,
+        "upset_risk_drag": 0.012,
         "home_availability_burden": 6.7,
         "away_availability_burden": 4.3,
         "home_elo": 1446.7,
@@ -176,9 +176,9 @@
         "away_rest_days": 5,
         "away_travel_km": 1343,
         "weather": {
-          "rain_probability": 55,
-          "wind_max": 13.8,
-          "temperature_max": 14.7
+          "rain_probability": 49,
+          "wind_max": 14.8,
+          "temperature_max": 14.9
         }
       }
     },
@@ -187,7 +187,7 @@
       "away_team": "Essendon",
       "home_team": "Hawthorn",
       "recommended_team": "Hawthorn",
-      "confidence_percent": 92,
+      "confidence_percent": 93,
       "start_time": "Sat 3:45 pm",
       "venue": "MCG",
       "reason": "27 of 27 tracked models favour Hawthorn. Hawthorn also rates higher on results-based team strength. Hawthorn has the stronger recent five-game record.",
@@ -195,18 +195,18 @@
       "model_count": 27,
       "kickoff_epoch_millis": 1784960100000,
       "baseline_model_home_probability": 0.90553,
-      "context_home_probability": 0.979343,
+      "context_home_probability": 1.033888,
       "metrics": {
         "model_home_probability": 0.9055,
         "elo_home_probability": 0.9713,
-        "final_home_probability": 0.9218,
+        "final_home_probability": 0.9338,
         "power_home": 430.25,
         "power_away": 327.75,
         "power_adjustment": 0.04,
         "margin_adjustment": 0.035,
         "venue_adjustment": 0.0031,
         "availability_adjustment": 0.0034,
-        "upset_risk_drag": 0.012,
+        "upset_risk_drag": 0.0,
         "home_availability_burden": 5.6,
         "away_availability_burden": 8.25,
         "home_elo": 1692.9,
@@ -219,9 +219,9 @@
         "away_rest_days": 5,
         "away_travel_km": 10,
         "weather": {
-          "rain_probability": 55,
-          "wind_max": 15.7,
-          "temperature_max": 14.3
+          "rain_probability": 49,
+          "wind_max": 16.7,
+          "temperature_max": 14.5
         }
       }
     },
@@ -263,8 +263,8 @@
         "away_travel_km": 16,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 12.2,
-          "temperature_max": 16.8
+          "wind_max": 12.4,
+          "temperature_max": 16.9
         }
       }
     },
@@ -273,7 +273,7 @@
       "away_team": "Richmond",
       "home_team": "Western Bulldogs",
       "recommended_team": "Western Bulldogs",
-      "confidence_percent": 89,
+      "confidence_percent": 91,
       "start_time": "Sat 7:10 pm",
       "venue": "Marvel Stadium",
       "reason": "27 of 27 tracked models favour Western Bulldogs. Western Bulldogs also rates higher on results-based team strength. Western Bulldogs has the stronger recent five-game record.",
@@ -281,18 +281,18 @@
       "model_count": 27,
       "kickoff_epoch_millis": 1784972400000,
       "baseline_model_home_probability": 0.850041,
-      "context_home_probability": 1.051575,
+      "context_home_probability": 1.10612,
       "metrics": {
         "model_home_probability": 0.85,
         "elo_home_probability": 0.9633,
-        "final_home_probability": 0.8944,
+        "final_home_probability": 0.9064,
         "power_home": 403.1,
         "power_away": 317.89,
         "power_adjustment": 0.04,
         "margin_adjustment": 0.0317,
         "venue_adjustment": 0.0,
         "availability_adjustment": 0.03,
-        "upset_risk_drag": 0.012,
+        "upset_risk_drag": 0.0,
         "home_availability_burden": 6.2,
         "away_availability_burden": 12.5,
         "home_elo": 1615.5,
@@ -305,9 +305,9 @@
         "away_rest_days": 6,
         "away_travel_km": 0,
         "weather": {
-          "rain_probability": 55,
-          "wind_max": 13.8,
-          "temperature_max": 14.7
+          "rain_probability": 49,
+          "wind_max": 14.8,
+          "temperature_max": 14.9
         }
       }
     },
@@ -349,8 +349,8 @@
         "away_travel_km": 1600,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 10.3,
-          "temperature_max": 20.2
+          "wind_max": 9.8,
+          "temperature_max": 20.3
         }
       }
     },
@@ -391,9 +391,9 @@
         "away_rest_days": 9,
         "away_travel_km": 0,
         "weather": {
-          "rain_probability": 16,
-          "wind_max": 11.6,
-          "temperature_max": 15.4
+          "rain_probability": 35,
+          "wind_max": 16.2,
+          "temperature_max": 14.5
         }
       }
     }
