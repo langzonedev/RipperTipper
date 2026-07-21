@@ -7,7 +7,7 @@ object PredictionSnapshot {
     const val roundName = "Round 20"
     const val roundDates = "23–26 July 2026 · Adelaide time"
     const val status = "28 models + injury/form context"
-    const val updatedLabel = "Updated 21 July, 1:11 pm"
+    const val updatedLabel = "Updated 21 July, 6:12 pm"
 
     val tips = listOf(
         Tip(
@@ -15,14 +15,14 @@ object PredictionSnapshot {
             awayTeam = "Collingwood",
             homeTeam = "Adelaide",
             recommendedTeam = "Adelaide",
-            confidencePercent = 70,
+            confidencePercent = 66,
             startTime = "Thu 7:00 pm",
             venue = "Adelaide Oval",
-            reason = "27 of 28 tracked models favour Adelaide. Adelaide also rates higher on results-based team strength. Adelaide has the cleaner current availability profile.",
+            reason = "27 of 28 tracked models favour Adelaide. Adelaide also rates higher on results-based team strength. Squiggle power rankings also lean toward Adelaide.",
             modelCount = 28,
             kickoffEpochMillis = 1784799000000L,
             baselineModelHomeProbability = 0.670261,
-            contextHomeProbability = 0.801768,
+            contextHomeProbability = 0.63995,
         ),
         Tip(
             id = 38661,
@@ -35,8 +35,8 @@ object PredictionSnapshot {
             reason = "23 of 27 tracked models favour Geelong. Geelong also rates higher on results-based team strength. Recent form runs against the pick, so confidence is restrained.",
             modelCount = 27,
             kickoffEpochMillis = 1784886000000L,
-            baselineModelHomeProbability = 0.432019,
-            contextHomeProbability = 0.291255,
+            baselineModelHomeProbability = 0.432015,
+            contextHomeProbability = 0.266711,
         ),
         Tip(
             id = 38664,
@@ -49,8 +49,8 @@ object PredictionSnapshot {
             reason = "27 of 27 tracked models favour Fremantle. Fremantle also rates higher on results-based team strength. Fremantle has the stronger recent five-game record.",
             modelCount = 27,
             kickoffEpochMillis = 1784887800000L,
-            baselineModelHomeProbability = 0.906026,
-            contextHomeProbability = 1.105908,
+            baselineModelHomeProbability = 0.906089,
+            contextHomeProbability = 1.105685,
         ),
         Tip(
             id = 38657,
@@ -63,22 +63,22 @@ object PredictionSnapshot {
             reason = "25 of 27 tracked models favour Carlton. Carlton has the stronger recent five-game record. Carlton's recent scoring margins are materially stronger.",
             modelCount = 27,
             kickoffEpochMillis = 1784948700000L,
-            baselineModelHomeProbability = 0.592081,
-            contextHomeProbability = 0.341174,
+            baselineModelHomeProbability = 0.592122,
+            contextHomeProbability = 0.355708,
         ),
         Tip(
             id = 38659,
             awayTeam = "Essendon",
             homeTeam = "Hawthorn",
             recommendedTeam = "Hawthorn",
-            confidencePercent = 91,
+            confidencePercent = 92,
             startTime = "Sat 3:45 pm",
             venue = "MCG",
             reason = "27 of 27 tracked models favour Hawthorn. Hawthorn also rates higher on results-based team strength. Hawthorn has the stronger recent five-game record.",
             modelCount = 27,
             kickoffEpochMillis = 1784960100000L,
             baselineModelHomeProbability = 0.905493,
-            contextHomeProbability = 0.914807,
+            contextHomeProbability = 0.979353,
         ),
         Tip(
             id = 38658,
@@ -91,22 +91,22 @@ object PredictionSnapshot {
             reason = "23 of 27 tracked models favour Sydney. Sydney also rates higher on results-based team strength. Sydney has the cleaner current availability profile.",
             modelCount = 27,
             kickoffEpochMillis = 1784961300000L,
-            baselineModelHomeProbability = 0.435874,
-            contextHomeProbability = 0.086702,
+            baselineModelHomeProbability = 0.435737,
+            contextHomeProbability = 0.099467,
         ),
         Tip(
             id = 38662,
             awayTeam = "Richmond",
             homeTeam = "Western Bulldogs",
             recommendedTeam = "Western Bulldogs",
-            confidencePercent = 88,
+            confidencePercent = 89,
             startTime = "Sat 7:10 pm",
             venue = "Marvel Stadium",
             reason = "27 of 27 tracked models favour Western Bulldogs. Western Bulldogs also rates higher on results-based team strength. Western Bulldogs has the stronger recent five-game record.",
             modelCount = 27,
             kickoffEpochMillis = 1784972400000L,
-            baselineModelHomeProbability = 0.849778,
-            contextHomeProbability = 1.003465,
+            baselineModelHomeProbability = 0.84997,
+            contextHomeProbability = 1.051594,
         ),
         Tip(
             id = 38656,
@@ -119,8 +119,8 @@ object PredictionSnapshot {
             reason = "27 of 27 tracked models favour Brisbane Lions. Brisbane Lions also rates higher on results-based team strength. Brisbane Lions has the stronger recent five-game record.",
             modelCount = 27,
             kickoffEpochMillis = 1785035400000L,
-            baselineModelHomeProbability = 0.80873,
-            contextHomeProbability = 1.142624,
+            baselineModelHomeProbability = 0.8085,
+            contextHomeProbability = 1.113596,
         ),
         Tip(
             id = 38660,
@@ -133,8 +133,8 @@ object PredictionSnapshot {
             reason = "27 of 27 tracked models favour St Kilda. St Kilda also rates higher on results-based team strength. Squiggle power rankings also lean toward St Kilda.",
             modelCount = 27,
             kickoffEpochMillis = 1785042900000L,
-            baselineModelHomeProbability = 0.345289,
-            contextHomeProbability = -0.075085,
+            baselineModelHomeProbability = 0.345296,
+            contextHomeProbability = -0.084178,
         ),
     )
 }
