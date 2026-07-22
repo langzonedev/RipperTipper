@@ -2,8 +2,8 @@
   "round_name": "Round 20",
   "round_dates": "23\u201326 July 2026 \u00b7 Adelaide time",
   "status": "29 models + injury/form context",
-  "updated_at": "2026-07-22T14:19:39.459786+00:00",
-  "updated_label": "Updated 22 July, 11:49 pm",
+  "updated_at": "2026-07-22T19:41:01.828522+00:00",
+  "updated_label": "Updated 23 July, 5:11 am",
   "sources": [
     "Squiggle",
     "Open-Meteo",
@@ -18,16 +18,16 @@
       "confidence_percent": 65,
       "start_time": "Thu 7:00 pm",
       "venue": "Adelaide Oval",
-      "reason": "28 of 29 tracked models favour Adelaide. Adelaide also rates higher on results-based team strength. Squiggle power rankings also lean toward Adelaide.",
+      "reason": "29 of 29 tracked models favour Adelaide. Adelaide also rates higher on results-based team strength. Squiggle power rankings also lean toward Adelaide.",
       "context_reason": "Adelaide also rates higher on results-based team strength. Squiggle power rankings also lean toward Adelaide.",
       "model_count": 29,
       "kickoff_epoch_millis": 1784799000000,
-      "baseline_model_home_probability": 0.663959,
-      "context_home_probability": 0.587123,
+      "baseline_model_home_probability": 0.674331,
+      "context_home_probability": 0.584294,
       "metrics": {
-        "model_home_probability": 0.664,
+        "model_home_probability": 0.6743,
         "elo_home_probability": 0.6883,
-        "final_home_probability": 0.6471,
+        "final_home_probability": 0.6545,
         "power_home": 403.06,
         "power_away": 389.72,
         "power_adjustment": 0.04,
@@ -47,9 +47,9 @@
         "away_rest_days": 4,
         "away_travel_km": 654,
         "weather": {
-          "rain_probability": 73,
-          "wind_max": 17.9,
-          "temperature_max": 12.5
+          "rain_probability": 59,
+          "wind_max": 17.5,
+          "temperature_max": 12.6
         }
       }
     },
@@ -90,9 +90,9 @@
         "away_rest_days": 8,
         "away_travel_km": 67,
         "weather": {
-          "rain_probability": 4,
-          "wind_max": 20.0,
-          "temperature_max": 12.6
+          "rain_probability": 3,
+          "wind_max": 20.9,
+          "temperature_max": 12.7
         }
       }
     },
@@ -134,8 +134,8 @@
         "away_travel_km": 3,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 10.4,
-          "temperature_max": 17.1
+          "wind_max": 9.0,
+          "temperature_max": 17.0
         }
       }
     },
@@ -176,9 +176,9 @@
         "away_rest_days": 5,
         "away_travel_km": 1343,
         "weather": {
-          "rain_probability": 53,
-          "wind_max": 14.9,
-          "temperature_max": 14.8
+          "rain_probability": 47,
+          "wind_max": 15.7,
+          "temperature_max": 15.0
         }
       }
     },
@@ -219,9 +219,9 @@
         "away_rest_days": 5,
         "away_travel_km": 10,
         "weather": {
-          "rain_probability": 53,
-          "wind_max": 17.3,
-          "temperature_max": 14.6
+          "rain_probability": 47,
+          "wind_max": 19.4,
+          "temperature_max": 14.9
         }
       }
     },
@@ -237,12 +237,12 @@
       "context_reason": "Sydney also rates higher on results-based team strength. Sydney has the cleaner current availability profile.",
       "model_count": 29,
       "kickoff_epoch_millis": 1784961300000,
-      "baseline_model_home_probability": 0.435624,
-      "context_home_probability": 0.099498,
+      "baseline_model_home_probability": 0.435576,
+      "context_home_probability": 0.099511,
       "metrics": {
         "model_home_probability": 0.4356,
         "elo_home_probability": 0.4159,
-        "final_home_probability": 0.3617,
+        "final_home_probability": 0.3616,
         "power_home": 385.25,
         "power_away": 400.39,
         "power_adjustment": -0.04,
@@ -263,7 +263,7 @@
         "away_travel_km": 16,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 14.8,
+          "wind_max": 12.7,
           "temperature_max": 17.8
         }
       }
@@ -305,9 +305,9 @@
         "away_rest_days": 6,
         "away_travel_km": 0,
         "weather": {
-          "rain_probability": 53,
-          "wind_max": 14.9,
-          "temperature_max": 14.8
+          "rain_probability": 47,
+          "wind_max": 15.7,
+          "temperature_max": 15.0
         }
       }
     },
@@ -348,9 +348,9 @@
         "away_rest_days": 7,
         "away_travel_km": 1600,
         "weather": {
-          "rain_probability": 4,
-          "wind_max": 9.9,
-          "temperature_max": 20.0
+          "rain_probability": 2,
+          "wind_max": 10.1,
+          "temperature_max": 19.9
         }
       }
     },
@@ -391,9 +391,9 @@
         "away_rest_days": 9,
         "away_travel_km": 0,
         "weather": {
-          "rain_probability": 39,
-          "wind_max": 11.7,
-          "temperature_max": 15.4
+          "rain_probability": 40,
+          "wind_max": 10.4,
+          "temperature_max": 14.4
         }
       }
     }

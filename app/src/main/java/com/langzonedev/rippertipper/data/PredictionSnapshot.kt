@@ -7,7 +7,7 @@ object PredictionSnapshot {
     const val roundName = "Round 20"
     const val roundDates = "23–26 July 2026 · Adelaide time"
     const val status = "29 models + injury/form context"
-    const val updatedLabel = "Updated 22 July, 11:49 pm"
+    const val updatedLabel = "Updated 23 July, 5:11 am"
 
     val tips = listOf(
         Tip(
@@ -18,11 +18,11 @@ object PredictionSnapshot {
             confidencePercent = 65,
             startTime = "Thu 7:00 pm",
             venue = "Adelaide Oval",
-            reason = "28 of 29 tracked models favour Adelaide. Adelaide also rates higher on results-based team strength. Squiggle power rankings also lean toward Adelaide.",
+            reason = "29 of 29 tracked models favour Adelaide. Adelaide also rates higher on results-based team strength. Squiggle power rankings also lean toward Adelaide.",
             modelCount = 29,
             kickoffEpochMillis = 1784799000000L,
-            baselineModelHomeProbability = 0.663959,
-            contextHomeProbability = 0.587123,
+            baselineModelHomeProbability = 0.674331,
+            contextHomeProbability = 0.584294,
         ),
         Tip(
             id = 38661,
@@ -91,8 +91,8 @@ object PredictionSnapshot {
             reason = "25 of 29 tracked models favour Sydney. Sydney also rates higher on results-based team strength. Sydney has the cleaner current availability profile.",
             modelCount = 29,
             kickoffEpochMillis = 1784961300000L,
-            baselineModelHomeProbability = 0.435624,
-            contextHomeProbability = 0.099498,
+            baselineModelHomeProbability = 0.435576,
+            contextHomeProbability = 0.099511,
         ),
         Tip(
             id = 38662,
