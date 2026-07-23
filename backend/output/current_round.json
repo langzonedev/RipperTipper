@@ -2,8 +2,8 @@
   "round_name": "Round 20",
   "round_dates": "23\u201326 July 2026 \u00b7 Adelaide time",
   "status": "30 models + injury/form context",
-  "updated_at": "2026-07-23T03:40:55.603826+00:00",
-  "updated_label": "Updated 23 July, 1:10 pm",
+  "updated_at": "2026-07-23T08:43:18.583996+00:00",
+  "updated_label": "Updated 23 July, 6:13 pm",
   "sources": [
     "Squiggle",
     "Open-Meteo",
@@ -22,12 +22,12 @@
       "context_reason": "Adelaide also rates higher on results-based team strength. Squiggle power rankings also lean toward Adelaide.",
       "model_count": 30,
       "kickoff_epoch_millis": 1784799000000,
-      "baseline_model_home_probability": 0.671817,
-      "context_home_probability": 0.582044,
+      "baseline_model_home_probability": 0.671383,
+      "context_home_probability": 0.582162,
       "metrics": {
-        "model_home_probability": 0.6718,
+        "model_home_probability": 0.6714,
         "elo_home_probability": 0.6883,
-        "final_home_probability": 0.6521,
+        "final_home_probability": 0.6518,
         "power_home": 403.06,
         "power_away": 389.95,
         "power_adjustment": 0.0394,
@@ -48,8 +48,8 @@
         "away_travel_km": 654,
         "weather": {
           "rain_probability": 78,
-          "wind_max": 18.6,
-          "temperature_max": 12.6
+          "wind_max": 18.9,
+          "temperature_max": 12.8
         }
       }
     },
@@ -65,12 +65,12 @@
       "context_reason": "Geelong also rates higher on results-based team strength. Recent form runs against the pick, so confidence is restrained.",
       "model_count": 30,
       "kickoff_epoch_millis": 1784886000000,
-      "baseline_model_home_probability": 0.43639,
-      "context_home_probability": 0.265518,
+      "baseline_model_home_probability": 0.435913,
+      "context_home_probability": 0.265648,
       "metrics": {
-        "model_home_probability": 0.4364,
+        "model_home_probability": 0.4359,
         "elo_home_probability": 0.3961,
-        "final_home_probability": 0.3988,
+        "final_home_probability": 0.3985,
         "power_home": 386.26,
         "power_away": 406.82,
         "power_adjustment": -0.04,
@@ -91,8 +91,8 @@
         "away_travel_km": 67,
         "weather": {
           "rain_probability": 2,
-          "wind_max": 18.6,
-          "temperature_max": 12.7
+          "wind_max": 18.8,
+          "temperature_max": 12.6
         }
       }
     },
@@ -108,10 +108,10 @@
       "context_reason": "Fremantle also rates higher on results-based team strength. Fremantle has the stronger recent five-game record.",
       "model_count": 30,
       "kickoff_epoch_millis": 1784887800000,
-      "baseline_model_home_probability": 0.90698,
-      "context_home_probability": 1.102525,
+      "baseline_model_home_probability": 0.90738,
+      "context_home_probability": 1.101107,
       "metrics": {
-        "model_home_probability": 0.907,
+        "model_home_probability": 0.9074,
         "elo_home_probability": 0.9868,
         "final_home_probability": 0.95,
         "power_home": 425.17,
@@ -134,8 +134,8 @@
         "away_travel_km": 3,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 9.4,
-          "temperature_max": 17.1
+          "wind_max": 9.9,
+          "temperature_max": 16.9
         }
       }
     },
@@ -151,12 +151,12 @@
       "context_reason": "Carlton has the stronger recent five-game record. Carlton's recent scoring margins are materially stronger.",
       "model_count": 30,
       "kickoff_epoch_millis": 1784948700000,
-      "baseline_model_home_probability": 0.591357,
-      "context_home_probability": 0.359956,
+      "baseline_model_home_probability": 0.591197,
+      "context_home_probability": 0.359999,
       "metrics": {
-        "model_home_probability": 0.5914,
+        "model_home_probability": 0.5912,
         "elo_home_probability": 0.5773,
-        "final_home_probability": 0.5404,
+        "final_home_probability": 0.5403,
         "power_home": 367.89,
         "power_away": 366.38,
         "power_adjustment": 0.0045,
@@ -177,8 +177,8 @@
         "away_travel_km": 1343,
         "weather": {
           "rain_probability": 63,
-          "wind_max": 16.9,
-          "temperature_max": 14.7
+          "wind_max": 17.2,
+          "temperature_max": 14.6
         }
       }
     },
@@ -194,12 +194,12 @@
       "context_reason": "Hawthorn also rates higher on results-based team strength. Hawthorn has the stronger recent five-game record.",
       "model_count": 30,
       "kickoff_epoch_millis": 1784960100000,
-      "baseline_model_home_probability": 0.906973,
-      "context_home_probability": 0.978949,
+      "baseline_model_home_probability": 0.907707,
+      "context_home_probability": 0.978749,
       "metrics": {
-        "model_home_probability": 0.907,
+        "model_home_probability": 0.9077,
         "elo_home_probability": 0.9713,
-        "final_home_probability": 0.9228,
+        "final_home_probability": 0.9233,
         "power_home": 407.66,
         "power_away": 310.37,
         "power_adjustment": 0.04,
@@ -220,8 +220,8 @@
         "away_travel_km": 10,
         "weather": {
           "rain_probability": 63,
-          "wind_max": 19.8,
-          "temperature_max": 14.5
+          "wind_max": 20.1,
+          "temperature_max": 14.4
         }
       }
     },
@@ -237,12 +237,12 @@
       "context_reason": "Sydney also rates higher on results-based team strength. Sydney has the cleaner current availability profile.",
       "model_count": 30,
       "kickoff_epoch_millis": 1784961300000,
-      "baseline_model_home_probability": 0.435783,
-      "context_home_probability": 0.099454,
+      "baseline_model_home_probability": 0.43659,
+      "context_home_probability": 0.099234,
       "metrics": {
-        "model_home_probability": 0.4358,
+        "model_home_probability": 0.4366,
         "elo_home_probability": 0.4159,
-        "final_home_probability": 0.3618,
+        "final_home_probability": 0.3624,
         "power_home": 385.31,
         "power_away": 400.39,
         "power_adjustment": -0.04,
@@ -263,8 +263,8 @@
         "away_travel_km": 16,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 13.2,
-          "temperature_max": 17.8
+          "wind_max": 11.9,
+          "temperature_max": 17.6
         }
       }
     },
@@ -280,12 +280,12 @@
       "context_reason": "Western Bulldogs also rates higher on results-based team strength. Western Bulldogs has the stronger recent five-game record.",
       "model_count": 30,
       "kickoff_epoch_millis": 1784972400000,
-      "baseline_model_home_probability": 0.854737,
-      "context_home_probability": 1.050294,
+      "baseline_model_home_probability": 0.855097,
+      "context_home_probability": 1.050196,
       "metrics": {
-        "model_home_probability": 0.8547,
+        "model_home_probability": 0.8551,
         "elo_home_probability": 0.9633,
-        "final_home_probability": 0.8978,
+        "final_home_probability": 0.898,
         "power_home": 382.49,
         "power_away": 301.08,
         "power_adjustment": 0.04,
@@ -306,8 +306,8 @@
         "away_travel_km": 0,
         "weather": {
           "rain_probability": 63,
-          "wind_max": 16.9,
-          "temperature_max": 14.7
+          "wind_max": 17.2,
+          "temperature_max": 14.6
         }
       }
     },
@@ -323,12 +323,12 @@
       "context_reason": "Brisbane Lions also rates higher on results-based team strength. Brisbane Lions has the stronger recent five-game record.",
       "model_count": 30,
       "kickoff_epoch_millis": 1785035400000,
-      "baseline_model_home_probability": 0.80655,
-      "context_home_probability": 1.114127,
+      "baseline_model_home_probability": 0.806727,
+      "context_home_probability": 1.114079,
       "metrics": {
-        "model_home_probability": 0.8065,
+        "model_home_probability": 0.8067,
         "elo_home_probability": 0.9209,
-        "final_home_probability": 0.8742,
+        "final_home_probability": 0.8743,
         "power_home": 412.49,
         "power_away": 360.75,
         "power_adjustment": 0.04,
@@ -349,8 +349,8 @@
         "away_travel_km": 1600,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 10.4,
-          "temperature_max": 19.5
+          "wind_max": 10.3,
+          "temperature_max": 19.4
         }
       }
     },
@@ -366,12 +366,12 @@
       "context_reason": "St Kilda also rates higher on results-based team strength. Squiggle power rankings also lean toward St Kilda.",
       "model_count": 30,
       "kickoff_epoch_millis": 1785042900000,
-      "baseline_model_home_probability": 0.345407,
-      "context_home_probability": -0.029663,
+      "baseline_model_home_probability": 0.34445,
+      "context_home_probability": -0.029402,
       "metrics": {
-        "model_home_probability": 0.3454,
+        "model_home_probability": 0.3444,
         "elo_home_probability": 0.3448,
-        "final_home_probability": 0.2629,
+        "final_home_probability": 0.2622,
         "power_home": 342.45,
         "power_away": 368.15,
         "power_adjustment": -0.04,
@@ -392,8 +392,8 @@
         "away_travel_km": 0,
         "weather": {
           "rain_probability": 55,
-          "wind_max": 10.4,
-          "temperature_max": 15.4
+          "wind_max": 11.4,
+          "temperature_max": 14.6
         }
       }
     }
