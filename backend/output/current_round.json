@@ -2,8 +2,8 @@
   "round_name": "Round 20",
   "round_dates": "24\u201326 July 2026 \u00b7 Adelaide time",
   "status": "31 models + injury/form context",
-  "updated_at": "2026-07-23T14:28:14.825355+00:00",
-  "updated_label": "Updated 23 July, 11:58 pm",
+  "updated_at": "2026-07-23T19:43:17.043179+00:00",
+  "updated_label": "Updated 24 July, 5:13 am",
   "sources": [
     "Squiggle",
     "Open-Meteo",
@@ -47,9 +47,9 @@
         "away_rest_days": 8,
         "away_travel_km": 67,
         "weather": {
-          "rain_probability": 8,
-          "wind_max": 18.6,
-          "temperature_max": 12.4
+          "rain_probability": 7,
+          "wind_max": 19.2,
+          "temperature_max": 12.7
         }
       }
     },
@@ -91,7 +91,7 @@
         "away_travel_km": 3,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 10.6,
+          "wind_max": 11.3,
           "temperature_max": 16.9
         }
       }
@@ -133,9 +133,9 @@
         "away_rest_days": 5,
         "away_travel_km": 1343,
         "weather": {
-          "rain_probability": 65,
-          "wind_max": 16.1,
-          "temperature_max": 14.6
+          "rain_probability": 78,
+          "wind_max": 15.9,
+          "temperature_max": 14.7
         }
       }
     },
@@ -176,9 +176,9 @@
         "away_rest_days": 5,
         "away_travel_km": 10,
         "weather": {
-          "rain_probability": 65,
-          "wind_max": 16.5,
-          "temperature_max": 14.2
+          "rain_probability": 78,
+          "wind_max": 18.3,
+          "temperature_max": 14.3
         }
       }
     },
@@ -220,7 +220,7 @@
         "away_travel_km": 16,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 12.5,
+          "wind_max": 11.1,
           "temperature_max": 17.8
         }
       }
@@ -262,9 +262,9 @@
         "away_rest_days": 6,
         "away_travel_km": 0,
         "weather": {
-          "rain_probability": 65,
-          "wind_max": 16.1,
-          "temperature_max": 14.6
+          "rain_probability": 78,
+          "wind_max": 15.9,
+          "temperature_max": 14.7
         }
       }
     },
@@ -306,7 +306,7 @@
         "away_travel_km": 1600,
         "weather": {
           "rain_probability": 0,
-          "wind_max": 10.3,
+          "wind_max": 10.4,
           "temperature_max": 19.3
         }
       }
@@ -348,9 +348,9 @@
         "away_rest_days": 9,
         "away_travel_km": 0,
         "weather": {
-          "rain_probability": 38,
-          "wind_max": 11.1,
-          "temperature_max": 14.7
+          "rain_probability": 31,
+          "wind_max": 9.3,
+          "temperature_max": 15.1
         }
       }
     }
